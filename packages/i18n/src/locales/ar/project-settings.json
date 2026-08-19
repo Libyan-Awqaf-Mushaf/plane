@@ -4,143 +4,143 @@
       "enter_project_id": "أدخل معرف المشروع",
       "please_select_a_timezone": "يرجى تحديد المنطقة الزمنية",
       "archive_project": {
-        "title": "أرشفة المشروع",
-        "description": "سيؤدي أرشفة مشروع إلى إزالته من القائمة الجانبية للتنقل على الرغم من أنه لا يزال بإمكانك الوصول إليه من صفحة المشاريع. يمكنك استعادة المشروع أو حذفه متى شئت.",
-        "button": "أرشفة المشروع"
+        "title": "أشرفة المشروع",
+        "description": "وقد أرشفة مشروع تأسيس القائمة من القائمة للتنقل على الرغم من أنه لا يزال لا يزال بإمكانك الوصول إليه من صفحة المشاريع. يمكنك استعادة المشروع أو حذفه متى شئت.",
+        "button": "أشرفة المشروع"
       },
       "delete_project": {
         "title": "حذف المشروع",
-        "description": "عند حذف مشروع، سيتم إزالة جميع البيانات والموارد داخل هذا المشروع نهائيًا ولا يمكن استعادتها.",
+        "description": "عند حذف المشروع، سيتم إزالة جميع البيانات بشكل أفضل داخل هذا المشروع نهائيًا ويمكن استعادتها.",
         "button": "حذف مشروعي"
       },
       "toast": {
-        "success": "تم تحديث المشروع بنجاح",
-        "error": "تعذر تحديث المشروع. يرجى المحاولة مرة أخرى."
+        "success": "تم تحديث المشروع الفعال",
+        "error": "عذرا تحديث المشروع. من فضلك حاول مرة أخرى."
       }
     },
     "members": {
       "label": "الأعضاء",
-      "project_lead": "قائد المشروع",
-      "project_lead_description": "Select the project lead for the project.",
+      "project_lead": "سمح",
+      "project_lead_description": "حدد قائد المشروع للمشروع.",
       "default_assignee": "المعين الافتراضي",
-      "default_assignee_description": "Select the default assignee for the project.",
-      "project_subscribers": "المشتركون في المشروع",
-      "project_subscribers_description": "Select members who will receive notifications for this project.",
+      "default_assignee_description": "حدد المكلف الافتراضي للمشروع.",
+      "project_subscribers": "ديميون في المشروع",
+      "project_subscribers_description": "حدد الأعضاء الذين سيتلقون إشعارات لهذا المشروع.",
       "guest_super_permissions": {
-        "title": "منح صلاحية العرض لجميع عناصر العمل للضيوف:",
-        "sub_heading": "This will allow guests to have view access to all the project work items."
+        "title": "مثالي لأطباق العمل للضيوف:",
+        "sub_heading": "سيسمح هذا للضيوف بالوصول إلى جميع عناصر عمل المشروع."
       },
       "invite_members": {
-        "title": "دعوة الأعضاء",
-        "sub_heading": "Invite members to work on your project.",
-        "select_co_worker": "Select co-worker"
+        "title": "دعوة للاشتراك",
+        "sub_heading": "قم بدعوة الأعضاء للعمل على مشروعك.",
+        "select_co_worker": "اختر زميل العمل"
       }
     },
     "states": {
       "heading": "الحالات",
-      "description": "Define and customize workflow states to track the progress of your work items.",
-      "describe_this_state_for_your_members": "Describe this state for your members.",
+      "description": "قم بتحديد وتخصيص حالات سير العمل لتتبع التقدم المحرز في عناصر العمل الخاصة بك.",
+      "describe_this_state_for_your_members": "وصف هذه الحالة لأعضائك.",
       "empty_state": {
-        "title": "لا توجد حالات متاحة لمجموعة {groupKey}",
+        "title": "لا توجد حالات معينة {groupKey}",
         "description": "يرجى إنشاء حالة جديدة"
       }
     },
     "labels": {
-      "heading": "التسميات",
-      "description": "Create custom labels to categorize and organize your work items",
-      "label_title": "Label title",
-      "label_title_is_required": "Label title is required",
-      "label_max_char": "Label name should not exceed 255 characters",
+      "heading": "تسميات",
+      "description": "أنشئ ملصقات مخصصة لتصنيف عناصر عملك وتنظيمها",
+      "label_title": "عنوان التسمية",
+      "label_title_is_required": "عنوان التصنيف مطلوب",
+      "label_max_char": "يجب ألا يتجاوز اسم التصنيف 255 حرفًا",
       "toast": {
-        "error": "Error while updating the label"
+        "error": "حدث خطأ أثناء تحديث التسمية"
       }
     },
     "estimates": {
       "heading": "التقديرات",
-      "description": "Set up estimation systems to track and communicate the effort required for each work item.",
+      "description": "قم بإعداد أنظمة تقدير لتتبع وإبلاغ الجهد المطلوب لكل عنصر عمل.",
       "label": "التقديرات",
-      "title": "Enable estimates for my project",
-      "enable_description": "They help you in communicating complexity and workload of the team.",
+      "title": "تمكين التقديرات لمشروعي",
+      "enable_description": "أنها تساعدك في التواصل التعقيد وعبء العمل على الفريق.",
       "no_estimate": "بدون تقدير",
-      "new": "نظام تقدير جديد",
+      "new": "نظام جديد معتمد",
       "create": {
         "custom": "مخصص",
-        "start_from_scratch": "البدء من الصفر",
+        "start_from_scratch": "القادم من الصفر",
         "choose_template": "اختر قالبًا",
-        "choose_estimate_system": "Choose an estimate system",
-        "enter_estimate_point": "Enter estimate",
-        "step": "الخطوة {step} من {total}",
+        "choose_estimate_system": "اختر نظام التقدير",
+        "enter_estimate_point": "أدخل التقدير",
+        "step": "خطوة {الخطوة} من {total}",
         "label": "إنشاء تقدير"
       },
       "toasts": {
         "created": {
           "success": {
-            "title": "Estimate created",
-            "message": "The estimate has been created successfully"
+            "title": "تم إنشاء التقدير",
+            "message": "تم إنشاء التقدير بنجاح"
           },
           "error": {
-            "title": "Estimate creation failed",
-            "message": "We were unable to create the new estimate, please try again."
+            "title": "فشل إنشاء التقدير",
+            "message": "لم نتمكن من إنشاء التقدير الجديد، يرجى المحاولة مرة أخرى."
           }
         },
         "updated": {
           "success": {
-            "title": "Estimate modified",
-            "message": "The estimate has been updated in your project."
+            "title": "تم تعديل التقدير",
+            "message": "تم تحديث التقدير في مشروعك."
           },
           "error": {
-            "title": "Estimate modification failed",
-            "message": "We were unable to modify the estimate, please try again"
+            "title": "فشل تعديل التقدير",
+            "message": "لم نتمكن من تعديل التقدير، يرجى المحاولة مرة أخرى"
           }
         },
         "enabled": {
           "success": {
             "title": "نجاح!",
-            "message": "Estimates have been enabled."
+            "message": "تم تمكين التقديرات."
           }
         },
         "disabled": {
           "success": {
             "title": "نجاح!",
-            "message": "Estimates have been disabled."
+            "message": "تم تعطيل التقديرات."
           },
           "error": {
             "title": "خطأ!",
-            "message": "Estimate could not be disabled. Please try again"
+            "message": "لا يمكن تعطيل التقدير. يرجى المحاولة مرة أخرى"
           }
         },
         "reorder": {
           "success": {
-            "title": "Estimates re-ordered",
-            "message": "Estimates have been re-ordered in your project."
+            "title": "إعادة ترتيب التقديرات",
+            "message": "تمت إعادة ترتيب التقديرات في مشروعك."
           },
           "error": {
-            "title": "Estimate re-order failed",
-            "message": "We were unable to re-order the estimates, please try again"
+            "title": "فشلت إعادة ترتيب التقدير",
+            "message": "لم نتمكن من إعادة ترتيب التقديرات، يرجى المحاولة مرة أخرى"
           }
         },
         "switch": {
           "success": {
-            "title": "Estimate system created",
-            "message": "Created and Enabled successfully"
+            "title": "تم إنشاء نظام التقدير",
+            "message": "تم الإنشاء والتمكين بنجاح"
           },
           "error": {
             "title": "خطأ",
-            "message": "Something went wrong"
+            "message": "حدث خطأ ما"
           }
         }
       },
       "validation": {
-        "min_length": "Estimate needs to be greater than 0.",
-        "unable_to_process": "We are unable to process your request, please try again.",
-        "numeric": "Estimate needs to be a numeric value.",
-        "character": "Estimate needs to be a character value.",
-        "empty": "Estimate value cannot be empty.",
-        "already_exists": "Estimate value already exists.",
-        "unsaved_changes": "You have some unsaved changes, Please save them before clicking on done",
-        "remove_empty": "Estimate can't be empty. Enter a value in each field or remove those you don't have values for.",
-        "fill": "Please fill this estimate field",
-        "repeat": "Estimate value cannot be repeated"
+        "min_length": "يجب أن يكون التقدير أكبر من 0.",
+        "unable_to_process": "لم نتمكن من معالجة طلبك، يرجى المحاولة مرة أخرى.",
+        "numeric": "يجب أن يكون التقدير قيمة رقمية.",
+        "character": "يجب أن يكون التقدير قيمة حرفية.",
+        "empty": "لا يمكن أن تكون القيمة التقديرية فارغة.",
+        "already_exists": "القيمة التقديرية موجودة بالفعل.",
+        "unsaved_changes": "لديك بعض التغييرات غير المحفوظة، يرجى حفظها قبل النقر على \"تم\".",
+        "remove_empty": "لا يمكن أن يكون التقدير فارغًا. أدخل قيمة في كل حقل أو قم بإزالة تلك الحقول التي ليس لديك قيم لها.",
+        "fill": "يرجى ملء هذا الحقل التقديري",
+        "repeat": "لا يمكن تكرار القيمة التقديرية"
       },
       "systems": {
         "points": {
@@ -152,8 +152,8 @@
         },
         "categories": {
           "label": "الفئات",
-          "t_shirt_sizes": "مقاسات القمصان",
-          "easy_to_hard": "من السهل إلى الصعب",
+          "t_shirt_sizes": "قمصان قديمة ال",
+          "easy_to_hard": "من السهل إلى الصعوبة",
           "custom": "مخصص"
         },
         "time": {
@@ -164,114 +164,114 @@
       "edit": {
         "title": "تعديل نظام التقدير",
         "add_or_update": {
-          "title": "إضافة أو تحديث أو إزالة التقديرات",
-          "description": "Manage current system either adding, updating or removing the points or categories."
+          "title": "إضافة أو تحديث أو إزالة التقييمات",
+          "description": "إدارة النظام الحالي سواء بإضافة أو تحديث أو إزالة النقاط أو الفئات."
         },
         "switch": {
           "title": "تغيير نوع التقدير",
-          "description": "Convert your points system to categories system and vice versa."
+          "description": "تحويل نظام النقاط الخاص بك إلى نظام الفئات والعكس."
         }
       },
-      "switch": "Switch estimate system",
-      "current": "Current estimate system",
-      "select": "Select an estimate system"
+      "switch": "تبديل نظام التقدير",
+      "current": "نظام التقدير الحالي",
+      "select": "حدد نظام التقدير"
     },
     "automations": {
-      "label": "الأتمتة",
-      "heading": "الأتمتة",
-      "description": "Configure automated actions to streamline your project management workflow and reduce manual tasks.",
+      "label": "التصميم",
+      "heading": "التصميم",
+      "description": "قم بتكوين الإجراءات التلقائية لتبسيط سير عمل إدارة المشروع وتقليل المهام اليدوية.",
       "auto-archive": {
-        "title": "Auto-archive closed work items",
-        "description": "Plane will auto archive work items that have been completed or canceled.",
-        "duration": "Auto-archive work items that are closed for"
+        "title": "الأرشفة التلقائية لعناصر العمل المغلقة",
+        "description": "ستقوم الطائرة تلقائيًا بأرشفة عناصر العمل التي تم إكمالها أو إلغاؤها.",
+        "duration": "الأرشفة التلقائية لعناصر العمل التي تم إغلاقها"
       },
       "auto-close": {
-        "title": "Auto-close work items",
-        "description": "Plane will automatically close work items that haven't been completed or canceled.",
-        "duration": "Auto-close work items that are inactive for",
-        "auto_close_status": "Auto-close status"
+        "title": "إغلاق عناصر العمل تلقائيًا",
+        "description": "ستقوم الطائرة تلقائيًا بإغلاق عناصر العمل التي لم يتم إكمالها أو إلغاؤها.",
+        "duration": "الإغلاق التلقائي لعناصر العمل غير النشطة",
+        "auto_close_status": "حالة الإغلاق التلقائي"
       },
       "auto-remind": {
-        "title": "Auto-reminders",
-        "description": "Plane will automatically send reminders via email and in-app notifications to keep your team on track with deadlines.",
-        "duration": "Send reminder before"
+        "title": "التذكيرات التلقائية",
+        "description": "سترسل الطائرة رسائل تذكير تلقائيًا عبر البريد الإلكتروني والإشعارات داخل التطبيق لإبقاء فريقك على المسار الصحيح فيما يتعلق بالمواعيد النهائية.",
+        "duration": "إرسال تذكير من قبل"
       }
     },
     "empty_state": {
       "labels": {
         "title": "لا توجد تسميات بعد",
-        "description": "Create labels to help organize and filter work items in you project."
+        "description": "قم بإنشاء تسميات للمساعدة في تنظيم عناصر العمل وتصفيتها في مشروعك."
       },
       "estimates": {
-        "title": "No estimate systems yet",
-        "description": "Create a set of estimates to communicate the amount of work per work item.",
-        "primary_button": "Add estimate system"
+        "title": "لا توجد أنظمة تقدير حتى الآن",
+        "description": "قم بإنشاء مجموعة من التقديرات لتوصيل حجم العمل لكل عنصر عمل.",
+        "primary_button": "إضافة نظام التقدير"
       },
       "integrations": {
-        "title": "No integrations configured",
-        "description": "Configure GitHub and other integrations to sync your project work items."
+        "title": "لم يتم تكوين أي عمليات تكامل",
+        "description": "قم بتكوين GitHub وعمليات التكامل الأخرى لمزامنة عناصر عمل مشروعك."
       }
     },
     "workflows": {
       "toggle": {
-        "title": "تمكين مسارات العمل",
-        "description": "Set workflows to control work item movement",
-        "no_states_tooltip": "No states are added to the workflow.",
-        "no_work_item_types_tooltip": "No work item types are added to the workflow.",
-        "no_states_or_work_item_types_tooltip": "No states or work item types are added to the workflow.",
+        "title": "مغامرات العمل",
+        "description": "قم بتعيين سير العمل للتحكم في حركة عناصر العمل",
+        "no_states_tooltip": "تتم إضافة أية حالات إلى سير العمل.",
+        "no_work_item_types_tooltip": "لا تتم إضافة أي أنواع عناصر عمل إلى سير العمل.",
+        "no_states_or_work_item_types_tooltip": "لا تتم إضافة أي حالات أو أنواع عناصر عمل إلى سير العمل.",
         "toast": {
           "loading": {
-            "enabling": "Enabling workflows",
-            "disabling": "Disabling workflows"
+            "enabling": "تمكين سير العمل",
+            "disabling": "تعطيل سير العمل"
           },
           "success": {
             "title": "نجاح!",
-            "message": "Workflows enabled successfully."
+            "message": "تم تمكين سير العمل بنجاح."
           },
           "error": {
             "title": "خطأ!",
-            "message": "Failed to enable workflows. Please try again."
+            "message": "فشل في تمكين مهام سير العمل. يرجى المحاولة مرة أخرى."
           }
         }
       },
-      "heading": "مسارات العمل",
-      "description": "Automate work item transitions and set rules to control how tasks move through your project pipeline.",
+      "heading": "تجارب العمل",
+      "description": "أتمتة انتقالات عناصر العمل وتعيين القواعد للتحكم في كيفية انتقال المهام عبر مسار مشروعك.",
       "add_button": "إضافة مسار عمل جديد",
-      "search": "البحث في مسارات العمل",
+      "search": "ابحث في مسارات العمل",
       "detail": {
-        "define": "Define workflow",
+        "define": "تحديد سير العمل",
         "add_states": "إضافة حالات",
         "unmapped_states": {
-          "title": "Unmapped states detected",
-          "description": "Some work items for the selected types are currently in states that do not exist in this workflow.",
-          "note": "If you enable this workflow, these items will automatically move to the initial state for this workflow.",
-          "label": "Missing states",
-          "tooltip": "Some work items are in states that are not mapped to this workflow. Open the workflow to review."
+          "title": "تم اكتشاف حالات غير معينة",
+          "description": "بعض عناصر العمل للأنواع المحددة موجودة حاليًا في حالات غير موجودة في سير العمل هذا.",
+          "note": "إذا قمت بتمكين سير العمل هذا، فستنتقل هذه العناصر تلقائيًا إلى الحالة الأولية لسير العمل هذا.",
+          "label": "الولايات المفقودة",
+          "tooltip": "توجد بعض عناصر العمل في حالات لم يتم تعيينها لسير العمل هذا. افتح سير العمل للمراجعة."
         }
       },
       "select_states": {
         "empty_state": {
           "title": "جميع الحالات قيد الاستخدام",
-          "description": "All defined states for this project are already present in your current workflow."
+          "description": "كافة الحالات المحددة لهذا المشروع موجودة بالفعل في سير عملك الحالي."
         }
       },
       "default_footer": {
-        "fallback_message": "This workflow applies to any work item type that is not assigned to a workflow."
+        "fallback_message": "ينطبق سير العمل هذا على أي نوع عنصر عمل لم يتم تعيينه لسير العمل."
       },
       "create": {
         "heading": "إنشاء مسار عمل جديد",
         "name": {
-          "placeholder": "Add a unique name",
+          "placeholder": "أضف اسمًا فريدًا",
           "validation": {
-            "max_length": "Name must be less than 255 characters",
-            "required": "Name is required",
-            "invalid": "Name can only contain letters, numbers, spaces, hyphens, and apostrophes"
+            "max_length": "يجب أن يكون الاسم أقل من 255 حرفًا",
+            "required": "الاسم مطلوب",
+            "invalid": "يمكن أن يحتوي الاسم فقط على أحرف وأرقام ومسافات وواصلات وفواصل عليا"
           }
         },
         "description": {
-          "placeholder": "Add a short description",
+          "placeholder": "أضف وصفًا قصيرًا",
           "validation": {
-            "invalid": "Description can only contain letters, numbers, spaces, hyphens, and apostrophes"
+            "invalid": "يمكن أن يحتوي الوصف فقط على أحرف وأرقام ومسافات وواصلات وفواصل عليا"
           }
         },
         "work_item_type": {
@@ -279,244 +279,244 @@
         },
         "success": {
           "title": "نجاح!",
-          "message": "Workflow created successfully."
+          "message": "تم إنشاء سير العمل بنجاح."
         },
         "error": {
           "title": "خطأ!",
-          "message": "Failed to create workflow. Please try again."
+          "message": "فشل في إنشاء سير العمل. يرجى المحاولة مرة أخرى."
         }
       },
       "update": {
         "success": {
           "title": "نجاح!",
-          "message": "Workflow updated successfully."
+          "message": "تم تحديث سير العمل بنجاح."
         },
         "error": {
           "title": "خطأ!",
-          "message": "Failed to update workflow. Please try again."
+          "message": "فشل في تحديث سير العمل. يرجى المحاولة مرة أخرى."
         }
       },
       "delete": {
-        "loading": "Deleting workflow",
+        "loading": "حذف سير العمل",
         "success": {
           "title": "نجاح!",
-          "message": "Workflow deleted successfully."
+          "message": "تم حذف سير العمل بنجاح."
         },
         "error": {
           "title": "خطأ!",
-          "message": "Failed to delete workflow. Please try again."
+          "message": "فشل في حذف سير العمل. يرجى المحاولة مرة أخرى."
         }
       },
       "add_states": {
         "success": {
           "title": "نجاح!",
-          "message": "States added successfully."
+          "message": "تمت إضافة الدول بنجاح."
         },
         "error": {
           "title": "خطأ!",
-          "message": "Failed to add states. Please try again."
+          "message": "فشلت إضافة الدول. يرجى المحاولة مرة أخرى."
         }
       }
     },
     "work_item_types": {
       "heading": "أنواع عناصر العمل",
-      "description": "Create and customize different types of work items with unique properties"
+      "description": "إنشاء وتخصيص أنواع مختلفة من عناصر العمل بخصائص فريدة"
     },
     "features": {
       "cycles": {
-        "title": "الدورات",
-        "short_title": "الدورات",
-        "description": "Schedule work in flexible periods that adapt to this project's unique rhythm and pace.",
-        "toggle_title": "Enable cycles",
-        "toggle_description": "Plan work in focused timeframes."
+        "title": "دورات",
+        "short_title": "دورات",
+        "description": "حدد موعدًا للعمل في فترات مرنة تتكيف مع إيقاع ووتيرة هذا المشروع الفريدين.",
+        "toggle_title": "تمكين الدورات",
+        "toggle_description": "تخطيط العمل في أطر زمنية مركزة."
       },
       "modules": {
-        "title": "الوحدات البرمجية",
-        "short_title": "الوحدات البرمجية",
-        "description": "Organize work into sub-projects with dedicated leads and assignees.",
-        "toggle_title": "Enable modules",
-        "toggle_description": "Project members will be able to create and edit modules."
+        "title": "الوحدات",
+        "short_title": "الوحدات",
+        "description": "تنظيم العمل في مشاريع فرعية مع عملاء محتملين ومكلفين.",
+        "toggle_title": "تمكين الوحدات",
+        "toggle_description": "سيتمكن أعضاء المشروع من إنشاء الوحدات وتحريرها."
       },
       "views": {
         "title": "العروض",
         "short_title": "العروض",
-        "description": "Save custom sorts, filters, and display options or share them with your team.",
-        "toggle_title": "Enable views",
-        "toggle_description": "Project members will be able to create and edit views."
+        "description": "احفظ عمليات الفرز والمرشحات وخيارات العرض المخصصة أو شاركها مع فريقك.",
+        "toggle_title": "تمكين وجهات النظر",
+        "toggle_description": "سيتمكن أعضاء المشروع من إنشاء طرق العرض وتحريرها."
       },
       "pages": {
         "title": "الصفحات",
         "short_title": "الصفحات",
-        "description": "Create and edit free-form content; notes, docs, anything.",
-        "toggle_title": "Enable pages",
-        "toggle_description": "Project members will be able to create and edit pages."
+        "description": "إنشاء وتحرير محتوى حر؛ الملاحظات، المستندات، أي شيء.",
+        "toggle_title": "تمكين الصفحات",
+        "toggle_description": "سيتمكن أعضاء المشروع من إنشاء الصفحات وتحريرها."
       },
       "intake": {
         "intake_responsibility": "مسؤولية الوارد",
         "intake_sources": "مصادر الوارد",
         "title": "الوارد",
         "short_title": "الوارد",
-        "description": "Let non-members share bugs, feedback, and suggestions; without disrupting your workflow.",
-        "toggle_title": "تمكين الوارد",
-        "toggle_description": "Let project members create in app intake requests.",
-        "toggle_tooltip_on": "Ask your Project Admin to turn this on.",
-        "toggle_tooltip_off": "Ask your Project Admin to turn this off.",
+        "description": "السماح لغير الأعضاء بمشاركة الأخطاء والتعليقات والاقتراحات؛ دون تعطيل سير العمل الخاص بك.",
+        "toggle_title": "واردات",
+        "toggle_description": "السماح لأعضاء المشروع بإنشاء طلبات تناول التطبيق.",
+        "toggle_tooltip_on": "اطلب من مسؤول المشروع الخاص بك تشغيل هذا.",
+        "toggle_tooltip_off": "اطلب من مسؤول المشروع الخاص بك إيقاف تشغيل هذا.",
         "notify_assignee": {
-          "title": "Notify assignees",
-          "description": "For a new request to intake, default assignees will be alerted via notifications"
+          "title": "إخطار المكلفين",
+          "description": "بالنسبة لطلب جديد للقبول، سيتم تنبيه المكلفين الافتراضيين عبر الإخطارات"
         },
         "in_app": {
-          "title": "In-app",
-          "description": "Get new work items from Members and Guests in your workspace without disruption to your existing work items."
+          "title": "داخل التطبيق",
+          "description": "احصل على عناصر عمل جديدة من الأعضاء والضيوف في مساحة العمل الخاصة بك دون تعطيل عناصر العمل الموجودة لديك."
         },
         "email": {
           "title": "البريد الإلكتروني",
-          "description": "Collect new work items from anyone who sends an email to a Plane email address.",
-          "fieldName": "Email ID"
+          "description": "اجمع عناصر عمل جديدة من أي شخص يرسل بريدًا إلكترونيًا إلى عنوان بريد إلكتروني خاص بالطائرة.",
+          "fieldName": "معرف البريد الإلكتروني"
         },
         "form": {
-          "title": "النماذج",
-          "description": "Let folks outside your workspace create potential new work items for you via a dedicated and secure form.",
-          "fieldName": "Default form URL",
-          "create_forms": "Create Forms using work item types",
-          "manage_forms": "إدارة النماذج",
-          "manage_forms_tooltip": "Ask your Workspace Admin to manage this.",
+          "title": "التطورات",
+          "description": "اسمح للأشخاص خارج مساحة العمل الخاصة بك بإنشاء عناصر عمل جديدة محتملة لك عبر نموذج مخصص وآمن.",
+          "fieldName": "عنوان URL للنموذج الافتراضي",
+          "create_forms": "إنشاء نماذج باستخدام أنواع عناصر العمل",
+          "manage_forms": "إدارة التطورات",
+          "manage_forms_tooltip": "اطلب من مسؤول مساحة العمل لديك إدارة هذا الأمر.",
           "create_form": "إنشاء نموذج",
-          "edit_form": "Edit form details",
-          "form_title": "Form title",
-          "form_title_required": "Form title is required",
+          "edit_form": "تحرير تفاصيل النموذج",
+          "form_title": "عنوان النموذج",
+          "form_title_required": "عنوان النموذج مطلوب",
           "work_item_type": "نوع عنصر العمل",
           "remove_property": "إزالة الخاصية",
-          "select_properties": "Select properties",
-          "search_placeholder": "Search for properties",
+          "select_properties": "حدد الخصائص",
+          "search_placeholder": "البحث عن العقارات",
           "toasts": {
-            "success_create": "Intake form created successfully",
-            "success_update": "Intake form updated successfully",
-            "error_create": "Failed to create intake form",
-            "error_update": "Failed to update intake form"
+            "success_create": "تم إنشاء نموذج الإدخال بنجاح",
+            "success_update": "تم تحديث نموذج القبول بنجاح",
+            "error_create": "فشل في إنشاء نموذج القبول",
+            "error_update": "فشل في تحديث نموذج القبول"
           }
         },
         "toasts": {
           "set": {
-            "loading": "Setting assignees...",
+            "loading": "تعيين المكلفين...",
             "success": {
               "title": "نجاح!",
-              "message": "Assignees set successfully."
+              "message": "تم تعيين المُعيَّنين بنجاح."
             },
             "error": {
               "title": "خطأ!",
-              "message": "Something went wrong while setting assignees. Please try again."
+              "message": "حدث خطأ ما أثناء تعيين المهام. يرجى المحاولة مرة أخرى."
             }
           }
         }
       },
       "time_tracking": {
-        "title": "تتبع الوقت",
-        "short_title": "تتبع الوقت",
-        "description": "Log time spent on work items and projects.",
-        "toggle_title": "Enable time tracking",
-        "toggle_description": "Project members will be able to log time worked."
+        "title": "تعقب الوقت",
+        "short_title": "تعقب الوقت",
+        "description": "تسجيل الوقت الذي يقضيه في عناصر العمل والمشاريع.",
+        "toggle_title": "تمكين تتبع الوقت",
+        "toggle_description": "سيتمكن أعضاء المشروع من تسجيل وقت العمل."
       },
       "milestones": {
         "title": "المحطات الرئيسية",
         "short_title": "المحطات الرئيسية",
-        "description": "Milestones provide a layer to align work items toward shared completion dates.",
-        "toggle_title": "Enable milestones",
-        "toggle_description": "Organize work items by milestone deadlines."
+        "description": "توفر المعالم طبقة لمحاذاة عناصر العمل مع تواريخ الإكمال المشتركة.",
+        "toggle_title": "تمكين المعالم",
+        "toggle_description": "تنظيم عناصر العمل حسب المواعيد النهائية الهامة."
       },
       "toasts": {
-        "loading": "Updating project feature...",
-        "success": "Project feature updated successfully.",
-        "error": "Something went wrong while updating project feature. Please try again."
+        "loading": "جارٍ تحديث ميزة المشروع...",
+        "success": "تم تحديث ميزة المشروع بنجاح.",
+        "error": "حدث خطأ ما أثناء تحديث ميزة المشروع. يرجى المحاولة مرة أخرى."
       }
     },
     "project_updates": {
       "heading": "تحديثات المشروع",
-      "description": "Consolidated tracking and progress monitoring for this project"
+      "description": "التتبع الموحد ومراقبة التقدم لهذا المشروع"
     },
     "templates": {
-      "heading": "القوالب",
-      "description": "Save 80% time spent on creating projects, work items, and pages when you use templates."
+      "heading": "شكل",
+      "description": "يمكنك توفير 80% من الوقت الذي تقضيه في إنشاء المشاريع وعناصر العمل والصفحات عند استخدام القوالب."
     },
     "cycles": {
       "auto_schedule": {
-        "heading": "Auto-schedule cycles",
-        "description": "Keep cycles moving without manual setup.",
-        "tooltip": "Automatically create new cycles based on your chosen schedule.",
+        "heading": "دورات الجدولة التلقائية",
+        "description": "حافظ على تحرك الدورات دون الإعداد اليدوي.",
+        "tooltip": "قم بإنشاء دورات جديدة تلقائيًا بناءً على الجدول الزمني الذي اخترته.",
         "edit_button": "تعديل",
         "form": {
           "cycle_title": {
-            "label": "Cycle Title",
-            "placeholder": "Title",
-            "tooltip": "The title will be appended with numbers for subsequent cycles. For eg: Design - 1/2/3",
+            "label": "عنوان الدورة",
+            "placeholder": "عنوان",
+            "tooltip": "سيتم إلحاق العنوان بأرقام للدورات اللاحقة. على سبيل المثال: التصميم - 1/2/3",
             "validation": {
-              "required": "Cycle title is required",
-              "max_length": "Title must not exceed 255 characters"
+              "required": "عنوان الدورة مطلوب",
+              "max_length": "يجب ألا يتجاوز العنوان 255 حرفًا"
             }
           },
           "cycle_duration": {
-            "label": "Cycle Duration",
-            "unit": "Weeks",
+            "label": "مدة الدورة",
+            "unit": "أسابيع",
             "validation": {
-              "required": "Cycle duration is required",
-              "min": "Cycle duration must be at least 1 week",
-              "max": "Cycle duration cannot exceed 30 weeks",
-              "positive": "Cycle duration must be positive"
+              "required": "مدة الدورة مطلوبة",
+              "min": "يجب أن تكون مدة الدورة أسبوعًا واحدًا على الأقل",
+              "max": "لا يمكن أن تتجاوز مدة الدورة 30 أسبوعًا",
+              "positive": "يجب أن تكون مدة الدورة موجبة"
             }
           },
           "cooldown_period": {
-            "label": "Cooldown Period",
-            "unit": "days",
-            "tooltip": "Pause between cycles before the next begins.",
+            "label": "فترة التهدئة",
+            "unit": "أيام",
+            "tooltip": "توقف مؤقتًا بين الدورات قبل أن تبدأ الدورة التالية.",
             "validation": {
-              "required": "Cooldown period is required",
-              "negative": "Cooldown period cannot be negative"
+              "required": "فترة التهدئة مطلوبة",
+              "negative": "لا يمكن أن تكون فترة التهدئة سلبية"
             }
           },
           "start_date": {
-            "label": "Cycle starts day",
+            "label": "تبدأ الدورة اليوم",
             "validation": {
-              "required": "Start date is required",
-              "past": "Start date cannot be in the past"
+              "required": "تاريخ البدء مطلوب",
+              "past": "لا يمكن أن يكون تاريخ البدء في الماضي"
             }
           },
           "number_of_cycles": {
-            "label": "Number of future cycles",
+            "label": "عدد الدورات المستقبلية",
             "validation": {
-              "required": "Number of cycles is required",
-              "min": "At least 1 cycle is required",
-              "max": "Cannot schedule more than 3 cycles"
+              "required": "عدد الدورات مطلوب",
+              "min": "مطلوب دورة واحدة على الأقل",
+              "max": "لا يمكن جدولة أكثر من 3 دورات"
             }
           },
           "auto_rollover": {
-            "label": "Auto-rollover work items",
-            "tooltip": "On the day a cycle completes, move all unfinished work items into the next cycle."
+            "label": "عناصر العمل التمرير التلقائي",
+            "tooltip": "في يوم اكتمال الدورة، انقل جميع عناصر العمل غير المكتملة إلى الدورة التالية."
           }
         },
         "toast": {
           "toggle": {
-            "loading_enable": "Enabling auto-schedule cycles",
-            "loading_disable": "Disabling auto-schedule cycles",
+            "loading_enable": "تمكين دورات الجدولة التلقائية",
+            "loading_disable": "تعطيل دورات الجدولة التلقائية",
             "success": {
               "title": "نجاح!",
-              "message": "Auto-schedule cycles toggled successfully."
+              "message": "تم تبديل دورات الجدولة التلقائية بنجاح."
             },
             "error": {
               "title": "خطأ!",
-              "message": "Failed to toggle auto-schedule cycles."
+              "message": "فشل في تبديل دورات الجدولة التلقائية."
             }
           },
           "save": {
-            "loading": "Saving auto-schedule cycles configuration",
+            "loading": "حفظ تكوين دورات الجدول الزمني التلقائي",
             "success": {
               "title": "نجاح!",
-              "message_create": "Auto-schedule cycles configuration saved successfully.",
-              "message_update": "Auto-schedule cycles configuration updated successfully."
+              "message_create": "تم حفظ تكوين دورات الجدولة التلقائية بنجاح.",
+              "message_update": "تم تحديث تكوين دورات الجدولة التلقائية بنجاح."
             },
             "error": {
               "title": "خطأ!",
-              "message_create": "Failed to save auto-schedule cycles configuration.",
-              "message_update": "Failed to update auto-schedule cycles configuration."
+              "message_create": "فشل حفظ تكوين دورات الجدولة التلقائية.",
+              "message_update": "فشل تحديث تكوين دورات الجدولة التلقائية."
             }
           }
         }
