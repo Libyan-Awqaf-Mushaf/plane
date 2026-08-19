@@ -104,6 +104,10 @@ services:
       args:
         DOCKER_BUILDKIT: 1
     restart: always
+    env_file:
+      - .env
+    environment:
+      API_BASE_URL: ${API_BASE_URL:-http://api:8000}
 
   plane-db:
     container_name: plane-db
