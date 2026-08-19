@@ -33,10 +33,24 @@ def magic_link(email, key, token):
         ) = get_email_configuration()
 
         # Send the mail
-        subject = f"Your unique Plane login code is {token}"
+        from plane.db.models import User, Profile
+        user = User.objects.filter(email=email).first()
+        language = "en"
+        if user:
+            profile = Profile.objects.filter(user=user).first()
+            if profile:
+                language = profile.language
+
+        if language == "ar":
+            subject = f"رمز تسجيل الدخول الفريد الخاص بك لـ Plane هو {token}"
+            template_name = "emails/auth/magic_signin_ar.html"
+        else:
+            subject = f"Your unique Plane login code is {token}"
+            template_name = "emails/auth/magic_signin.html"
+
         context = {"code": token, "email": email}
 
-        html_content = render_to_string("emails/auth/magic_signin.html", context)
+        html_content = render_to_string(template_name, context)
         text_content = generate_plain_text_from_html(html_content)
 
         connection = get_connection(

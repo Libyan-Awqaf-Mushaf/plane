@@ -51,8 +51,22 @@ MODULE_ID = "issue_module__module_id"
 
 def send_export_email(email, slug, csv_buffer, rows):
     """Helper function to send export email."""
-    subject = "Your Export is ready"
-    html_content = render_to_string("emails/exports/analytics.html", {})
+    from plane.db.models import User, Profile
+    recipient_user = User.objects.filter(email=email).first()
+    language = "en"
+    if recipient_user:
+        profile = Profile.objects.filter(user=recipient_user).first()
+        if profile:
+            language = profile.language
+
+    if language == "ar":
+        subject = "ملف التصدير الخاص بك جاهز"
+        template_name = "emails/exports/analytics_ar.html"
+    else:
+        subject = "Your Export is ready"
+        template_name = "emails/exports/analytics.html"
+
+    html_content = render_to_string(template_name, {})
     text_content = generate_plain_text_from_html(html_content)
 
     csv_buffer.seek(0)

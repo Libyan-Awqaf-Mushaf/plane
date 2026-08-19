@@ -193,9 +193,20 @@ def send_webhook_deactivation_email(webhook_id: str, receiver_id: str, current_s
         receiver = User.objects.get(pk=receiver_id)
         webhook = Webhook.objects.get(pk=webhook_id)
 
-        # Get the webhook payload
-        subject = "Webhook Deactivated"
-        message = f"Webhook {webhook.url} has been deactivated due to failed requests."
+        from plane.db.models import Profile
+        language = "en"
+        profile = Profile.objects.filter(user=receiver).first()
+        if profile:
+            language = profile.language
+
+        if language == "ar":
+            subject = "تم إيقاف الويب هوك (Webhook)"
+            message = f"تم إيقاف تفعيل الويب هوك {webhook.url} بسبب فشل الطلبات."
+            template_name = "emails/notifications/webhook-deactivate_ar.html"
+        else:
+            subject = "Webhook Deactivated"
+            message = f"Webhook {webhook.url} has been deactivated due to failed requests."
+            template_name = "emails/notifications/webhook-deactivate.html"
 
         # Send the mail
         context = {
@@ -203,7 +214,7 @@ def send_webhook_deactivation_email(webhook_id: str, receiver_id: str, current_s
             "message": message,
             "webhook_url": f"{current_site}/{str(webhook.workspace.slug)}/settings/webhooks/{str(webhook.id)}",
         }
-        html_content = render_to_string("emails/notifications/webhook-deactivate.html", context)
+        html_content = render_to_string(template_name, context)
         text_content = generate_plain_text_from_html(html_content)
 
         # Set the email connection

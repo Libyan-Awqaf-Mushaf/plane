@@ -35,7 +35,20 @@ def forgot_password(first_name, email, uidb64, token, current_site):
             EMAIL_FROM,
         ) = get_email_configuration()
 
-        subject = "A new password to your Plane account has been requested"
+        from plane.db.models import User, Profile
+        user = User.objects.filter(email=email).first()
+        language = "en"
+        if user:
+            profile = Profile.objects.filter(user=user).first()
+            if profile:
+                language = profile.language
+
+        if language == "ar":
+            subject = "تم طلب تعيين كلمة مرور جديدة لحساب Plane الخاص بك"
+            template_name = "emails/auth/forgot_password_ar.html"
+        else:
+            subject = "A new password to your Plane account has been requested"
+            template_name = "emails/auth/forgot_password.html"
 
         context = {
             "first_name": first_name,
@@ -43,7 +56,7 @@ def forgot_password(first_name, email, uidb64, token, current_site):
             "email": email,
         }
 
-        html_content = render_to_string("emails/auth/forgot_password.html", context)
+        html_content = render_to_string(template_name, context)
 
         text_content = generate_plain_text_from_html(html_content)
 

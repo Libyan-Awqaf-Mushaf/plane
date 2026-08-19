@@ -54,11 +54,22 @@ def project_add_user_email(current_site, project_member_id, invitor_id):
             EMAIL_FROM,
         ) = get_email_configuration()
 
-        # Set the subject
-        subject = "You have been invited to a Plane project"
+        # Set the subject and template
+        from plane.db.models import Profile
+        language = "en"
+        profile = Profile.objects.filter(user=project_member.member).first()
+        if profile:
+            language = profile.language
+
+        if language == "ar":
+            subject = "تمت دعوتك للمشاركة في مشروع على Plane"
+            template_name = "emails/notifications/project_addition_ar.html"
+        else:
+            subject = "You have been invited to a Plane project"
+            template_name = "emails/notifications/project_addition.html"
 
         # Render the email template
-        html_content = render_to_string("emails/notifications/project_addition.html", context)
+        html_content = render_to_string(template_name, context)
         text_content = generate_plain_text_from_html(html_content)
         # Initialize the connection
         connection = get_connection(

@@ -237,7 +237,18 @@ def send_email_notification(issue_id, notification_data, receiver_id, email_noti
                         }
                     )
 
-            summary = "Updates were made to the issue by"
+            from plane.db.models import Profile
+            language = "en"
+            profile = Profile.objects.filter(user=receiver).first()
+            if profile:
+                language = profile.language
+
+            if language == "ar":
+                summary = "تم إجراء تحديثات على المهمة بواسطة"
+                template_name = "emails/notifications/issue-updates_ar.html"
+            else:
+                summary = "Updates were made to the issue by"
+                template_name = "emails/notifications/issue-updates.html"
 
             # Send the mail
             subject = f"{issue.project.identifier}-{issue.sequence_id} {remove_unwanted_characters(issue.name)}"
@@ -259,7 +270,7 @@ def send_email_notification(issue_id, notification_data, receiver_id, email_noti
                 "comments": comments,
                 "entity_type": "issue",
             }
-            html_content = render_to_string("emails/notifications/issue-updates.html", context)
+            html_content = render_to_string(template_name, context)
             text_content = generate_plain_text_from_html(html_content)
 
             try:

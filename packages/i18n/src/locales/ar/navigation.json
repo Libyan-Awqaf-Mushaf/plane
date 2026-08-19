@@ -1,0 +1,34 @@
+{
+  "command_k": {
+    "empty_state": {
+      "search": {
+        "title": "لم يتم العثور على نتائج"
+      }
+    }
+  },
+  "sidebar": {
+    "stickies": "الملاحظات اللاصقة",
+    "your_work": "عملك",
+    "projects": "المشاريع",
+    "pages": "الصفحات",
+    "new_work_item": "عنصر عمل جديد",
+    "home": "الرئيسية",
+    "inbox": "البريد الوارد",
+    "workspace": "مساحة العمل",
+    "views": "العروض",
+    "analytics": "التحليلات",
+    "work_items": "عناصر العمل",
+    "cycles": "الدورات",
+    "modules": "الوحدات",
+    "intake": "المدخلات",
+    "drafts": "المسودات",
+    "favorites": "المفضلة",
+    "pro": "برو",
+    "upgrade": "ترقية",
+    "pi_chat": "ذكاء Plane الاصطناعي",
+    "epics": "الملاحم",
+    "upgrade_plan": "ترقية الخطة",
+    "plane_pro": "Plane برو",
+    "business": "الأعمال"
+  }
+}

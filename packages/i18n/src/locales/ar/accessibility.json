@@ -1,0 +1,34 @@
+{
+  "aria_labels": {
+    "projects_sidebar": {
+      "workspace_logo": "شعار مساحة العمل",
+      "open_workspace_switcher": "فتح مبدل مساحة العمل",
+      "open_user_menu": "فتح قائمة المستخدم",
+      "open_command_palette": "فتح لوحة الأوامر",
+      "open_extended_sidebar": "فتح الشريط الجانبي الممتد",
+      "close_extended_sidebar": "إغلاق الشريط الجانبي الممتد",
+      "create_favorites_folder": "إنشاء مجلد المفضلة",
+      "open_folder": "فتح المجلد",
+      "close_folder": "إغلاق المجلد",
+      "open_favorites_menu": "فتح قائمة المفضلة",
+      "close_favorites_menu": "إغلاق قائمة المفضلة",
+      "enter_folder_name": "أدخل اسم المجلد",
+      "create_new_project": "إنشاء مشروع جديد",
+      "open_projects_menu": "فتح قائمة المشاريع",
+      "close_projects_menu": "إغلاق قائمة المشاريع",
+      "toggle_quick_actions_menu": "تبديل قائمة الإجراءات السريعة",
+      "open_project_menu": "فتح قائمة المشروع",
+      "close_project_menu": "إغلاق قائمة المشروع",
+      "collapse_sidebar": "طي الشريط الجانبي",
+      "expand_sidebar": "توسيع الشريط الجانبي",
+      "edition_badge": "فتح نافذة الخطط المدفوعة"
+    },
+    "auth_forms": {
+      "clear_email": "مسح البريد الإلكتروني",
+      "show_password": "إظهار كلمة المرور",
+      "hide_password": "إخفاء كلمة المرور",
+      "close_alert": "إغلاق التنبيه",
+      "close_popover": "إغلاق النافذة المنبثقة"
+    }
+  }
+}

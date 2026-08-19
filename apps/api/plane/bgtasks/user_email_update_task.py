@@ -32,10 +32,24 @@ def send_email_update_magic_code(email, token):
         ) = get_email_configuration()
 
         # Send the mail
-        subject = "Verify your new email address"
+        from plane.db.models import User, Profile
+        user = User.objects.filter(email=email).first()
+        language = "en"
+        if user:
+            profile = Profile.objects.filter(user=user).first()
+            if profile:
+                language = profile.language
+
+        if language == "ar":
+            subject = "تحقق من عنوان بريدك الإلكتروني الجديد"
+            template_name = "emails/auth/magic_signin_ar.html"
+        else:
+            subject = "Verify your new email address"
+            template_name = "emails/auth/magic_signin.html"
+
         context = {"code": token, "email": email}
 
-        html_content = render_to_string("emails/auth/magic_signin.html", context)
+        html_content = render_to_string(template_name, context)
         text_content = generate_plain_text_from_html(html_content)
 
         connection = get_connection(
@@ -83,10 +97,24 @@ def send_email_update_confirmation(email):
         ) = get_email_configuration()
 
         # Send the confirmation email
-        subject = "Plane email address successfully updated"
+        from plane.db.models import User, Profile
+        user = User.objects.filter(email=email).first()
+        language = "en"
+        if user:
+            profile = Profile.objects.filter(user=user).first()
+            if profile:
+                language = profile.language
+
+        if language == "ar":
+            subject = "تم تحديث عنوان بريد Plane الإلكتروني بنجاح"
+            template_name = "emails/user/email_updated_ar.html"
+        else:
+            subject = "Plane email address successfully updated"
+            template_name = "emails/user/email_updated.html"
+
         context = {"email": email}
 
-        html_content = render_to_string("emails/user/email_updated.html", context)
+        html_content = render_to_string(template_name, context)
         text_content = generate_plain_text_from_html(html_content)
 
         connection = get_connection(

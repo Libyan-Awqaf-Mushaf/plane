@@ -50,6 +50,7 @@ export function useTranslation(): TTranslationStore {
           if (typeof window === "undefined") return;
           localStorage.setItem(LANGUAGE_STORAGE_KEY, lng);
           document.documentElement.lang = lng;
+          document.documentElement.dir = lng === "ar" ? "rtl" : "ltr";
         } catch (err) {
           console.error("Failed to change language:", err);
         }

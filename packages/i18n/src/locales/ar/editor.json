@@ -1,0 +1,65 @@
+{
+  "attachmentComponent": {
+    "uploader": {
+      "drag_and_drop": "أفلت الملفات هنا أو انقر للرفع"
+    },
+    "errors": {
+      "file_too_large": {
+        "title": "ملف كبير جدًا.",
+        "description": "الحد الأقصى لحجم الملف هو {maxFileSize} ميجابايت"
+      },
+      "unsupported_file_type": {
+        "title": "نوع ملف غير مدعوم.",
+        "description": "شاهد المزيد وغيرها"
+      },
+      "default": {
+        "title": "فشل الرفع.",
+        "description": "حدث خطأ ما. من فضلك حاول مرة أخرى."
+      }
+    },
+    "upgrade": {
+      "description": "قم بترقية خطتك لعرض هذا المرفق."
+    },
+    "aria": {
+      "click_to_upload": "انقر للزيادة المرفقة"
+    }
+  },
+  "externalEmbedComponent": {
+    "block_menu": {
+      "convert_to_embed": "تحويل إلى تضمين",
+      "convert_to_link": "تحويل إلى رابط",
+      "convert_to_richcard": "تحويل إلى البطاقة المتنوعة"
+    },
+    "placeholder": {
+      "insert_embed": "أدخل رابط التضمين المفضل لديك هنا، مثل فيديو YouTube، تصميم Figma، إلخ.",
+      "link": "أدخل أو لصق الرابط"
+    },
+    "input_modal": {
+      "embed": "تضمين",
+      "works_with_links": "يعمل مع YouTube و Figma و Google Docs المتزايد"
+    },
+    "error": {
+      "not_valid_link": "يرجى الاتصال برابط URL صالح."
+    }
+  },
+  "ai_block": {
+    "content": {
+      "placeholder": "خصوصية هذه الوكالة",
+      "generated_here": "سيتم إنشاء محتوى الذكاء الاصطناعي الخاص بك هنا"
+    },
+    "block_types": {
+      "placeholder": "حدد نوع عبادة",
+      "summarize_page": "تلخيص الصفحة",
+      "custom_prompt": "إعلان مخصص"
+    },
+    "actions": {
+      "discard": "لا",
+      "generate": "توليد",
+      "generating": "جاري التوليد",
+      "rewriting": "جاري إعادة الكتابة",
+      "rewrite": "إعادة الكتابة",
+      "use_this": "استخدام هذا",
+      "refine": "يسهل"
+    }
+  }
+}

@@ -1,0 +1,508 @@
+{
+  "workspace_settings": {
+    "label": "إعدادات مساحة العمل",
+    "page_label": "{workspace} - الإعدادات العامة",
+    "key_created": "تم إنشاء المفتاح",
+    "copy_key": "انسخ واحفظ هذا المفتاح السري في صفحات Plane. لن تتمكن من رؤية هذا المفتاح بعد النقر فوق إغلاق. تم تنزيل ملف CSV يحتوي على المفتاح.",
+    "token_copied": "تم نسخ الرمز إلى الحافظة.",
+    "settings": {
+      "general": {
+        "title": "عام",
+        "upload_logo": "رفع الشعار",
+        "edit_logo": "تعديل الشعار",
+        "name": "اسم مساحة العمل",
+        "company_size": "حجم الشركة",
+        "url": "رابط مساحة العمل",
+        "workspace_timezone": "المنطقة الزمنية لمساحة العمل",
+        "update_workspace": "تحديث مساحة العمل",
+        "delete_workspace": "حذف مساحة العمل هذه",
+        "delete_workspace_description": "عند حذف مساحة عمل، سيتم إزالة جميع البيانات والموارد داخل تلك المساحة نهائيًا ولا يمكن استعادتها.",
+        "delete_btn": "حذف مساحة العمل هذه",
+        "delete_modal": {
+          "title": "هل أنت متأكد أنك تريد حذف مساحة العمل هذه؟",
+          "description": "لديك تجربة نشطة لإحدى خططنا المدفوعة. يرجى إلغاؤها أولاً للمتابعة.",
+          "dismiss": "تجاهل",
+          "cancel": "إلغاء التجربة",
+          "success_title": "تم حذف مساحة العمل.",
+          "success_message": "ستنتقل قريبًا إلى صفحة ملفك الشخصي.",
+          "error_title": "لم ينجح ذلك.",
+          "error_message": "يرجى المحاولة مرة أخرى."
+        },
+        "errors": {
+          "name": {
+            "required": "الاسم مطلوب",
+            "max_length": "يجب ألا يتجاوز اسم مساحة العمل 80 حرفًا"
+          },
+          "company_size": {
+            "required": "حجم الشركة مطلوب",
+            "select_a_range": "حدد حجم المنظمة"
+          }
+        }
+      },
+      "members": {
+        "title": "الأعضاء",
+        "add_member": "إضافة عضو",
+        "pending_invites": "دعوات معلقة",
+        "invitations_sent_successfully": "تم إرسال الدعوات بنجاح",
+        "leave_confirmation": "هل أنت متأكد أنك تريد مغادرة مساحة العمل؟ لن يكون لديك صلاحية الوصول إليها بعد الآن. لا يمكن التراجع عن هذا الإجراء.",
+        "details": {
+          "full_name": "الاسم الكامل",
+          "display_name": "اسم العرض",
+          "email_address": "عنوان البريد الإلكتروني",
+          "account_type": "نوع الحساب",
+          "authentication": "المصادقة",
+          "joining_date": "تاريخ الانضمام"
+        },
+        "modal": {
+          "title": "دعوة أشخاص للتعاون",
+          "description": "ادعُ أشخاصًا للتعاون في مساحة عملك.",
+          "button": "إرسال الدعوات",
+          "button_loading": "جاري إرسال الدعوات",
+          "placeholder": "name@company.com",
+          "errors": {
+            "required": "نحتاج إلى بريد إلكتروني لدعوتهم.",
+            "invalid": "البريد الإلكتروني غير صالح"
+          }
+        }
+      },
+      "billing_and_plans": {
+        "heading": "الفواتير والخطط",
+        "description": "اختر خطتك، ودر اشتراكاتك، وقم بالترقية بسهولة مع نمو احتياجاتك.",
+        "title": "الفواتير والخطط",
+        "current_plan": "الخطة الحالية",
+        "free_plan": "أنت تستخدم الخطة المجانية حاليًا",
+        "view_plans": "عرض الخطط"
+      },
+      "exports": {
+        "heading": "التصدير",
+        "description": "صَدِّر بيانات مشروعك بتنسيقات مختلفة وادخل إلى سجل التصدير بروابط تنزيل.",
+        "title": "التصدير",
+        "exporting": "جاري التصدير",
+        "previous_exports": "عمليات التصدير السابقة",
+        "export_separate_files": "تصدير البيانات إلى ملفات منفصلة",
+        "exporting_projects": "جاري تصدير المشروع",
+        "format": "التنسيق",
+        "filters_info": "قم بتطبيق الفلاتر لتصدير عناصر عمل محددة بناءً على معاييرك.",
+        "modal": {
+          "title": "تصدير إلى",
+          "toasts": {
+            "success": {
+              "title": "تم التصدير بنجاح",
+              "message": "ستتمكن من تنزيل {entity} المصدر من قائمة التصدير السابقة."
+            },
+            "error": {
+              "title": "فشل التصدير",
+              "message": "فشلت عملية التصدير. يرجى المحاولة مرة أخرى."
+            }
+          }
+        }
+      },
+      "webhooks": {
+        "heading": "الويب هوك",
+        "description": "أتمت الإشعارات إلى الخدمات الخارجية عند حدوث أحداث المشروع.",
+        "title": "الويب هوك",
+        "add_webhook": "إضافة ويب هوك",
+        "modal": {
+          "title": "إنشاء ويب هوك",
+          "details": "تفاصيل الويب هوك",
+          "payload": "رابط الحمولة",
+          "question": "ما هي الأحداث التي ترغب في تشغيل هذا الويب هوك بها؟",
+          "error": "الرابط مطلوب"
+        },
+        "secret_key": {
+          "title": "المفتاح السري",
+          "message": "قم بتوليد رمز للتوقيع على حمولة الويب هوك"
+        },
+        "options": {
+          "all": "أرسل لي كل شيء",
+          "individual": "تحديد أحداث معينة"
+        },
+        "toasts": {
+          "created": {
+            "title": "تم إنشاء الويب هوك",
+            "message": "تم إنشاء الويب هوك بنجاح"
+          },
+          "not_created": {
+            "title": "لم يتم إنشاء الويب هوك",
+            "message": "تعذر إنشاء الويب هوك"
+          },
+          "updated": {
+            "title": "تم تحديث الويب هوك",
+            "message": "تم تحديث الويب هوك بنجاح"
+          },
+          "not_updated": {
+            "title": "لم يتم تحديث الويب هوك",
+            "message": "تعذر تحديث الويب هوك"
+          },
+          "removed": {
+            "title": "تم إزالة الويب هوك",
+            "message": "تم إزالة الويب هوك بنجاح"
+          },
+          "not_removed": {
+            "title": "لم يتم إزالة الويب هوك",
+            "message": "تعذر إزالة الويب هوك"
+          },
+          "secret_key_copied": {
+            "message": "تم نسخ المفتاح السري إلى الحافظة."
+          },
+          "secret_key_not_copied": {
+            "message": "حدث خطأ أثناء نسخ المفتاح السري."
+          }
+        }
+      },
+      "api_tokens": {
+        "heading": "رموز الوصول",
+        "description": "قم بتوليد رموز API آمنة لربط بياناتك بالأنظمة والتطبيقات الخارجية.",
+        "title": "رموز الوصول",
+        "add_token": "إضافة رمز وصول",
+        "create_token": "إنشاء رمز",
+        "never_expires": "لا تنتهي صلاحيته أبدًا",
+        "generate_token": "توليد رمز",
+        "generating": "جاري التوليد",
+        "delete": {
+          "title": "حذف رمز الوصول",
+          "description": "أي تطبيق يستخدم this token will no longer have the access to Plane data. This action cannot be undone.",
+          "success": {
+            "title": "نجاح!",
+            "message": "تم حذف الرمز بنجاح"
+          },
+          "error": {
+            "title": "خطأ!",
+            "message": "تعذر حذف الرمز"
+          }
+        }
+      },
+      "integrations": {
+        "title": "التكاملات",
+        "heading": "التكاملات",
+        "description": "اربط بالأدوات والخدمات الشائعة لمزامنة عملك عبر بيئة سير عملك بالكامل.",
+        "page_title": "اعمل على بيانات Plane الخاصة بك في التطبيقات المتاحة أو تطبيقاتك الخاصة.",
+        "page_description": "عرض جميع التكاملات قيد الاستخدام بواسطة مساحة العمل هذه أو بواسطتك."
+      },
+      "imports": {
+        "title": "الاستيراد",
+        "heading": "الاستيراد",
+        "description": "اربط واستورد البيانات من أدوات إدارة المشاريع الحالية لديك لتبسيط دمج سير عملك."
+      },
+      "worklogs": {
+        "title": "سجلات العمل",
+        "heading": "سجلات العمل",
+        "description": "قم بتنزيل سجلات العمل أو الجداول الزمنية لأي شخص في أي مشروع."
+      },
+      "group_syncing": {
+        "title": "مزامنة المجموعات",
+        "heading": "مزامنة المجموعات",
+        "description": "اربط مجموعات موفر الهوية بالمشاريع والأدوار. يتم تحديث وصول المستخدم تلقائيًا عند تغيير عضوية المجموعة في موفر الهوية الخاص بك، مما يبسط عمليات التهيئة والمغادرة.",
+        "enable": {
+          "title": "تمكين مزامنة المجموعات",
+          "description": "إضافة المستخدمين تلقائيًا إلى المشاريع بناءً على مجموعات موفر الهوية."
+        },
+        "config": {
+          "title": "تكوين مزامنة المجموعات",
+          "description": "إعداد كيفية ربط مجموعات موفر الهوية بالمشاريع والأدوار.",
+          "sync_on_login": {
+            "title": "مزامنة عند تسجيل الدخول",
+            "description": "تحديث عضوية المجموعة ووصول المشروع عند تسجيل دخول المستخدم."
+          },
+          "sync_offline": {
+            "title": "مؤقت المزامنة",
+            "description": "تشغيل المزامنة كل ست ساعات تلقائيًا، دون انتظار تسجيل دخول المستخدمين."
+          },
+          "auto_remove": {
+            "title": "إزالة تلقائية",
+            "description": "إزالة المستخدمين تلقائيًا من المشاريع عندما لا يعودون مطابقين للمجموعة."
+          },
+          "group_attribute_key": {
+            "title": "مفتاح سمة المجموعة",
+            "description": "سمة موفر الهوية المستخدمة لتحديد ومزامنة مجموعات المستخدمين.",
+            "placeholder": "المجموعات"
+          }
+        },
+        "group_mapping": {
+          "title": "ربط المجموعات",
+          "description": "اربط مجموعات موفر الهوية بالمشاريع والأدوار.",
+          "button_text": "إضافة مزامنة مجموعة جديدة"
+        },
+        "toast": {
+          "updating": "جاري تحديث ميزة مزامنة المجموعات",
+          "success": "تم تحديث ميزة مزامنة المجموعات بنجاح.",
+          "error": "فشل تحديث ميزة مزامنة المجموعات!"
+        },
+        "delete_modal": {
+          "title": "حذف مزامنة المجموعة",
+          "content": "لن يتم إضافة مستخدمين جدد من هذه المجموعة إلى المشروع. سيحتفظ المستخدمون المضافون بالفعل بدورهم الحالي."
+        },
+        "modal": {
+          "idp_group_name": {
+            "text": "مجموعة المستخدمين",
+            "required": "مجموعة المستخدمين مطلوبة",
+            "placeholder": "أدخل أسماء مجموعات موفر الهوية"
+          },
+          "project": {
+            "text": "المشروع",
+            "required": "المشروع مطلوب",
+            "placeholder": "اختر مشروعًا"
+          },
+          "default_role": {
+            "text": "دور المشروع",
+            "required": "دور المشروع مطلوب",
+            "placeholder": "اختر دور المشروع"
+          }
+        }
+      },
+      "identity": {
+        "title": "الهوية",
+        "heading": "الهوية",
+        "description": "قم بتكوين نطاقك وتمكين تسجيل الدخول الموحد"
+      },
+      "project_states": {
+        "title": "حالات المشروع",
+        "heading": "عرض نظرة عامة على تقدم جميع المشاريع.",
+        "description": "حالات المشروع هي ميزة حصرية لتتبع تقدم جميع مشاريعك بأي خاصية مشروع.",
+        "go_to_settings": "الذهاب إلى الإعدادات"
+      },
+      "projects": {
+        "title": "المشاريع",
+        "description": "Manage project states, and enable project labels, and other configuration.",
+        "tabs": {
+          "states": "حالات المشروع",
+          "labels": "ملصقات المشروع"
+        }
+      },
+      "templates": {
+        "title": "القوالب",
+        "heading": "القوالب",
+        "description": "Save 80% time spent on creating projects, work items, and pages when you use templates."
+      },
+      "relations": {
+        "title": "العلاقات",
+        "heading": "العلاقات",
+        "description": "Create and manage relation types that connect work items across your workspace."
+      },
+      "cancel_trial": {
+        "title": "إلغاء التجربة أولاً.",
+        "description": "You have an active trial to one of our paid plans. Please cancel it first to proceed.",
+        "dismiss": "تجاهل",
+        "cancel": "إلغاء التجربة",
+        "cancel_success_title": "Trial cancelled.",
+        "cancel_success_message": "You can now delete the workspace.",
+        "cancel_error_title": "That didn't work.",
+        "cancel_error_message": "Try again, please."
+      },
+      "applications": {
+        "internal": "داخلي",
+        "title": "التطبيقات",
+        "applicationId_copied": "تم نسخ معرف التطبيق إلى الحافظة",
+        "clientId_copied": "تم نسخ معرف العميل إلى الحافظة",
+        "clientSecret_copied": "تم نسخ سر العميل إلى الحافظة",
+        "third_party_apps": "تطبيقات الطرف الثالث",
+        "your_apps": "تطبيقاتك",
+        "connect": "اتصال",
+        "connected": "متصل",
+        "disconnect": "فصل",
+        "install": "تثبيت",
+        "installed": "مثبت",
+        "configure": "تكوين",
+        "app_available": "لقد جعلت هذا التطبيق متاحًا للاستخدام مع مساحة عمل Plane",
+        "app_credentials_regenrated": {
+          "title": "App credentials successfully re-generated",
+          "description": "Replace the client secret everywhere it's used. The previous secret is no longer valid."
+        },
+        "app_created": {
+          "title": "App created successfully",
+          "description": "Use the credentials to install the app in a Plane workspace"
+        },
+        "installed_apps": "Installed apps",
+        "all_apps": "جميع التطبيقات",
+        "internal_apps": "Internal apps",
+        "app_name_title": "App Name",
+        "app_description_title": {
+          "label": "Long Description",
+          "placeholder": "Write a long description for marketplace. Press ‘/’ for commands."
+        },
+        "authorization_grant_type": {
+          "title": "نوع الاتصال",
+          "description": "Choose if your app should be installed once for the workspace or let every user connect their own account"
+        },
+        "website": {
+          "title": "الموقع الإلكتروني",
+          "description": "Link to your app's website.",
+          "placeholder": "https://example.com"
+        },
+        "app_maker": {
+          "title": "App Maker",
+          "description": "The person or organization creating the app."
+        },
+        "app_maker_error": "Maker name is required",
+        "setup_url": {
+          "label": "رابط الإعداد",
+          "description": "Users will be redirected to this URL when they install the app.",
+          "placeholder": "https://example.com/setup"
+        },
+        "webhook_url": {
+          "label": "رابط الويب هوك",
+          "description": "This is where we will send webhook events and updates from the workspaces where your app is installed.",
+          "placeholder": "https://example.com/webhook"
+        },
+        "webhook_secret": {
+          "label": "Webhook Secret",
+          "description": "Secret used to verify incoming webhook requests.",
+          "placeholder": "Enter a random secret key"
+        },
+        "redirect_uris": {
+          "label": "Redirect URIs (space separated)",
+          "description": "Users will be redirected to this path after they have authenticated with Plane.",
+          "placeholder": "https://example.com https://example.com/"
+        },
+        "app_available_description": "Connect a Plane workspace to start using it",
+        "client_id_and_secret": "Client ID and Secret",
+        "client_id_and_secret_description": "Copy and save this secret key in Pages. You can't see this key again after you hit Close.",
+        "client_id_and_secret_download": "You can download a CSV with the key from here.",
+        "application_id": "Application ID",
+        "client_id": "Client ID",
+        "client_secret": "Client Secret",
+        "export_as_csv": "Export as CSV",
+        "slug_already_exists": "Slug already exists",
+        "failed_to_create_application": "Failed to create application",
+        "upload_logo": "Upload Logo",
+        "app_name_error": "App name is required",
+        "app_short_description_title": "Short Description",
+        "app_short_description_error": "App short description is required",
+        "app_description_error": "App description is required",
+        "app_slug_title": "App slug",
+        "app_slug_error": "App slug is required",
+        "invalid_website_error": "Invalid website",
+        "webhook_url_title": "Webhook URL",
+        "webhook_url_error": "Webhook URL is required",
+        "invalid_webhook_url_error": "Invalid webhook URL",
+        "redirect_uris_title": "Redirect URIs",
+        "redirect_uris_error": "Redirect URIs are required",
+        "invalid_redirect_uris_error": "Invalid redirect URIs",
+        "redirect_uris_description": "Enter space seperated URIs where the app will redirect to after the user e.g https://example.com https://example.com/",
+        "authorized_javascript_origins_title": "Authorized Javascript Origins",
+        "authorized_javascript_origins_error": "Authorized Javascript Origins are required",
+        "invalid_authorized_javascript_origins_error": "Invalid authorized Javascript Origins",
+        "authorized_javascript_origins_description": "Enter space seperated origins where the app will be allowed to make requests e.g app.com example.com",
+        "create_app": "Create app",
+        "update_app": "Update app",
+        "build_your_own_app": "Build your own app",
+        "edit_app_details": "Edit app details",
+        "regenerate_client_secret_description": "Regenerate the client secret. If you regenerate the secret, you can copy the key or download it to a CSV file right after.",
+        "regenerate_client_secret": "Regenerate client secret",
+        "regenerate_client_secret_confirm_title": "Sure you want to regenerate the client secret?",
+        "regenerate_client_secret_confirm_description": "App using this secret will stop working. You will need to update the secret in the app.",
+        "regenerate_client_secret_confirm_cancel": "Cancel",
+        "regenerate_client_secret_confirm_regenerate": "Regenerate",
+        "read_only_access_to_workspace": "Read-only access to your workspace",
+        "write_access_to_workspace": "Write access to your workspace",
+        "read_only_access_to_user_profile": "Read-only access to your user profile",
+        "write_access_to_user_profile": "Write access to your user profile",
+        "connect_app_to_workspace": "Connect {app} to your workspace {workspace}",
+        "user_permissions": "User permissions",
+        "user_permissions_description": "User permissions are used to grant access to the user's profile.",
+        "workspace_permissions": "Workspace permissions",
+        "workspace_permissions_description": "Workspace permissions are used to grant access to the workspace.",
+        "with_the_permissions": "with the permissions",
+        "app_consent_title": "{app} is requesting access to your Plane workspace and profile.",
+        "choose_workspace_to_connect_app_with": "Choose a workspace to connect the app with",
+        "app_consent_workspace_permissions_title": "{app} would like",
+        "app_consent_user_permissions_title": "{app} can also request a user's permission to the following resources. These permissions will be requested and authorized of and by a user only.",
+        "app_consent_accept_title": "By accepting, you",
+        "app_consent_accept_1": "Grant the app access to your Plane data wherever you can use the app in or outside Plane",
+        "app_consent_accept_2": "Agree to {app}'s Privacy Policy and Terms Of Use",
+        "accepting": "Accepting...",
+        "accept": "Accept",
+        "categories": "الفئات",
+        "select_app_categories": "Select app categories",
+        "categories_title": "الفئات",
+        "categories_error": "Categories are required",
+        "invalid_categories_error": "Invalid categories",
+        "categories_description": "Select the categories that best describe the app",
+        "supported_plans": "Supported Plans",
+        "supported_plans_description": "Select the workspace plans that can install this application. Leave empty to allow all plans.",
+        "select_plans": "Select Plans",
+        "privacy_policy_url_title": "رابط سياسة الخصوصية",
+        "privacy_policy_url_error": "رابط سياسة الخصوصية مطلوب",
+        "invalid_privacy_policy_url_error": "رابط سياسة خصوصية غير صالح",
+        "terms_of_service_url_title": "Terms of Service URL",
+        "terms_of_service_url_error": "Terms of Service URL is required",
+        "invalid_terms_of_service_url_error": "Invalid terms of service URL",
+        "support_url_title": "Support URL",
+        "support_url_error": "Support URL is required",
+        "invalid_support_url_error": "Invalid support URL",
+        "video_url_title": "Video URL",
+        "video_url_error": "Video URL is required",
+        "invalid_video_url_error": "Invalid video URL",
+        "setup_url_error": "Setup URL is required",
+        "invalid_setup_url_error": "Invalid setup URL",
+        "configuration_url_title": "Configuration URL",
+        "configuration_url_error": "Configuration URL is required",
+        "invalid_configuration_url_error": "Invalid configuration URL",
+        "contact_email_title": "Contact Email",
+        "contact_email_error": "Contact Email is required",
+        "invalid_contact_email_error": "Invalid contact email",
+        "upload_attachments": "Upload Attachments",
+        "uploading_images": "Uploading {count} Image{count, plural, one {s} other {s}}",
+        "drop_images_here": "Drop images here",
+        "click_to_upload_images": "Click to upload images",
+        "invalid_file_or_exceeds_size_limit": "Invalid file or exceeds size limit ({size} MB)",
+        "uploading": "Uploading...",
+        "upload_and_save": "Upload & Save",
+        "app_consent_no_access_title": "Request to install",
+        "app_consent_no_access_description": "This app can only be installed after a workspace admin installs it. Contact your workspace admin to proceed.",
+        "app_consent_unapproved_title": "This app hasn't been reviewed or approved by Plane yet.",
+        "app_consent_unapproved_description": "Make sure you trust this app before connecting it to your workspace.",
+        "go_to_app": "Go to app",
+        "enable_app_mentions": "Enable App Mentions",
+        "enable_app_mentions_tooltip": "When this is enabled, Users can mention or assign Work Items to this application.",
+        "scopes": "Scopes",
+        "select_scopes": "Select Scopes",
+        "read_access_to": "Read-only access to",
+        "write_access_to": "Write access to",
+        "global_permission_expiration": "Global scopes are expiring soon. Use granular scopes instead. For example, use project:read instead of a global read.",
+        "selected_scopes": "{count} selected",
+        "scopes_and_permissions": "Scopes & Permissions",
+        "read": "Read",
+        "write": "Write",
+        "scope_description": {
+          "projects": "Access to projects, and all project related entities",
+          "wiki": "Access to wiki, and all wiki related entities",
+          "workspaces": "Access to workspaces, and all workspace related entities",
+          "stickies": "Access to stickies, and all sticky related entities",
+          "profile": "Access to user profile information",
+          "agents": "Access to agents, and all agent related entities",
+          "assets": "Access to assets, and all asset related entities"
+        }
+      },
+      "plane-intelligence": {
+        "title": "ذكاء Plane الاصطناعي",
+        "heading": "Plane AI",
+        "description": "See your work get smarter and faster with AI that is natively connected to your work and knowledge base. "
+      },
+      "runners": {
+        "title": "مُشغّل Plane",
+        "heading": "السكربتات",
+        "new_script": "New Script",
+        "description": "Automate your workflows with custom scripts and automation rules."
+      }
+    },
+    "empty_state": {
+      "api_tokens": {
+        "title": "لم يتم إنشاء أي رموز وصول",
+        "description": "Plane APIs can be used to integrate your data in Plane with any external system. Create a token to get started."
+      },
+      "webhooks": {
+        "title": "لم يتم إضافة أي ويب هوك",
+        "description": "Create webhooks to receive real-time updates and automate actions."
+      },
+      "exports": {
+        "title": "لا توجد عمليات تصدير بعد",
+        "description": "Anytime you export, you will also have a copy here for reference."
+      },
+      "imports": {
+        "title": "لا توجد عمليات استيراد بعد",
+        "description": "Find all your previous imports here and download them."
+      }
+    }
+  }
+}

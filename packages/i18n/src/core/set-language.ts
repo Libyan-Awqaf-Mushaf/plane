@@ -14,5 +14,6 @@ export async function setLanguage(lng: TLanguage): Promise<void> {
   if (typeof window !== "undefined") {
     localStorage.setItem(LANGUAGE_STORAGE_KEY, lng);
     document.documentElement.lang = lng;
+    document.documentElement.dir = lng === "ar" ? "rtl" : "ltr";
   }
 }

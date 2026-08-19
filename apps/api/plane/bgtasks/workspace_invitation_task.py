@@ -45,8 +45,25 @@ def workspace_invitation(email, workspace_id, token, current_site, inviter):
             EMAIL_FROM,
         ) = get_email_configuration()
 
-        # Subject of the email
-        subject = f"{user.first_name or user.display_name or user.email} has invited you to join them in {workspace.name} on Plane"  # noqa: E501
+        from plane.db.models import Profile
+        recipient_user = User.objects.filter(email=email).first()
+        language = "en"
+        if recipient_user:
+            profile = Profile.objects.filter(user=recipient_user).first()
+            if profile:
+                language = profile.language
+        else:
+            inviter_user = User.objects.filter(email=inviter).first()
+            if inviter_user:
+                profile = Profile.objects.filter(user=inviter_user).first()
+                if profile:
+                    language = profile.language
+
+        if language == "ar":
+            subject = f"لقد دعاك {user.first_name or user.display_name or user.email} للانضمام إلى مساحة عمل {workspace.name} على Plane"
+            template_name = "emails/invitations/workspace_invitation_ar.html"
+        else:
+            subject = f"{user.first_name or user.display_name or user.email} has invited you to join them in {workspace.name} on Plane"  # noqa: E501
 
         context = {
             "email": email,
@@ -55,7 +72,7 @@ def workspace_invitation(email, workspace_id, token, current_site, inviter):
             "abs_url": abs_url,
         }
 
-        html_content = render_to_string("emails/invitations/workspace_invitation.html", context)
+        html_content = render_to_string(template_name, context)
 
         text_content = generate_plain_text_from_html(html_content)
 

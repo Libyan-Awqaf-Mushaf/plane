@@ -30,17 +30,36 @@ def project_invitation(email, project_id, token, current_site, invitor):
         relativelink = f"/project-invitations/?invitation_id={project_member_invite.id}&email={email}&slug={project.workspace.slug}&project_id={str(project_id)}"  # noqa: E501
         abs_url = current_site + relativelink
 
-        subject = f"{user.first_name or user.display_name or user.email} invited you to join {project.name} on Plane"
+        from plane.db.models import Profile
+        recipient_user = User.objects.filter(email=email).first()
+        language = "en"
+        if recipient_user:
+            profile = Profile.objects.filter(user=recipient_user).first()
+            if profile:
+                language = profile.language
+        else:
+            invitor_user = User.objects.filter(email=invitor).first()
+            if invitor_user:
+                profile = Profile.objects.filter(user=invitor_user).first()
+                if profile:
+                    language = profile.language
+
+        if language == "ar":
+            subject = f"لقد دعاك {user.first_name or user.display_name or user.email} للانضمام إلى {project.name} على Plane"
+            template_name = "emails/invitations/project_invitation_ar.html"
+        else:
+            subject = f"{user.first_name or user.display_name or user.email} invited you to join {project.name} on Plane"
+            template_name = "emails/invitations/project_invitation.html"
 
         context = {
             "email": email,
-            "first_name": user.first_name,
+            "first_name": user.first_name or user.display_name or user.email,
             "project_name": project.name,
             "invitation_url": abs_url,
             "current_site": current_site,
         }
 
-        html_content = render_to_string("emails/invitations/project_invitation.html", context)
+        html_content = render_to_string(template_name, context)
 
         text_content = generate_plain_text_from_html(html_content)
 

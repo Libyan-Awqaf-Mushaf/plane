@@ -1,0 +1,478 @@
+{
+  "work_item_types": {
+    "label": "أنواع عناصر العمل",
+    "label_lowercase": "أنواع عناصر العمل",
+    "settings": {
+      "description": "قم بتخصيص وإضافة الخصائص الخاصة بك لتناسب احتياجات فريقك.",
+      "cant_delete_default_message": "لا يمكن حذف نوع عنصر العمل هذا لأنه تم تعيينه كافتراضي لهذا المشروع",
+      "set_as_default": "تعيين كافتراضي",
+      "cant_set_default_inactive_message": "قم بتنشيط هذا النوع قبل تعيينه كافتراضي",
+      "set_default_confirmation": {
+        "title": "تعيين كنوع عنصر عمل افتراضي",
+        "description": "سيؤدي تعيين {name} كافتراضي إلى استيراده إلى جميع المشاريع في مساحة العمل هذه. ستستخدم جميع عناصر العمل الجديدة هذا النوع افتراضيًا.",
+        "confirm_button": "تعيين كافتراضي"
+      },
+      "properties": {
+        "title": "الخصائص",
+        "description": "إنشاء وتخصيص الخصائص.",
+        "tooltip": "يأتي كل نوع عنصر عمل مع مجموعة افتراضية من الخصائص مثل العنوان والوصف والمعين له والحالة والأولوية وتاريخ البدء وتاريخ الاستحقاق والوحدة البرمجية والدورة وما إلى ذلك. يمكنك أيضًا تخصيص وإضافة خصائصك الخاصة لتناسب احتياجات فريقك.",
+        "add_button": "إضافة خاصية جديدة",
+        "project": {
+          "add_button": {
+            "import_from_workspace": "استيراد من مساحة العمل"
+          }
+        },
+        "dropdown": {
+          "label": "نوع الخاصية",
+          "placeholder": "حدد النوع"
+        },
+        "property_type": {
+          "text": {
+            "label": "نص"
+          },
+          "number": {
+            "label": "رقم"
+          },
+          "dropdown": {
+            "label": "قائمة منسدلة"
+          },
+          "boolean": {
+            "label": "منطقي"
+          },
+          "date": {
+            "label": "تاريخ"
+          },
+          "member_picker": {
+            "label": "منتقي الأعضاء"
+          },
+          "formula": {
+            "label": "معادلة"
+          }
+        },
+        "attributes": {
+          "label": "السمات",
+          "text": {
+            "single_line": {
+              "label": "سطر واحد"
+            },
+            "multi_line": {
+              "label": "فقرة"
+            },
+            "readonly": {
+              "label": "للقراءة فقط",
+              "header": "بيانات للقراءة فقط"
+            },
+            "invalid_text_format": {
+              "label": "تنسيق نص غير صالح"
+            }
+          },
+          "number": {
+            "default": {
+              "placeholder": "إضافة رقم"
+            }
+          },
+          "relation": {
+            "single_select": {
+              "label": "تحديد مفرد"
+            },
+            "multi_select": {
+              "label": "تحديد متعدد"
+            },
+            "no_default_value": {
+              "label": "بلا قيمة افتراضية"
+            }
+          },
+          "boolean": {
+            "label": "صواب | خطأ",
+            "no_default": "بلا قيمة افتراضية"
+          },
+          "option": {
+            "create_update": {
+              "label": "الخيارات",
+              "form": {
+                "placeholder": "إضافة خيار",
+                "errors": {
+                  "name": {
+                    "required": "اسم الخيار مطلوب.",
+                    "integrity": "يوجد خيار بنفس الاسم بالفعل."
+                  }
+                }
+              }
+            },
+            "select": {
+              "placeholder": {
+                "single": "حدد خيارًا",
+                "multi": {
+                  "default": "حدد خيارات",
+                  "variable": "{count} خيارات محددة"
+                }
+              }
+            }
+          }
+        },
+        "toast": {
+          "create": {
+            "success": {
+              "title": "نجاح!",
+              "message": "تم إنشاء الخاصية {name} بنجاح."
+            },
+            "error": {
+              "title": "خطأ!",
+              "message": "فشل إنشاء الخاصية. يرجى المحاولة مرة أخرى!"
+            }
+          },
+          "update": {
+            "success": {
+              "title": "نجاح!",
+              "message": "تم تحديث الخاصية {name} بنجاح."
+            },
+            "error": {
+              "title": "خطأ!",
+              "message": "فشل تحديث الخاصية. يرجى المحاولة مرة أخرى!"
+            }
+          },
+          "delete": {
+            "success": {
+              "title": "نجاح!",
+              "message": "تم حذف الخاصية {name} بنجاح."
+            },
+            "error": {
+              "title": "خطأ!",
+              "message": "فشل حذف الخاصية. يرجى المحاولة مرة أخرى!"
+            }
+          },
+          "enable_disable": {
+            "loading": "جاري {action} الخاصية {name}",
+            "success": {
+              "title": "نجاح!",
+              "message": "تم {action} الخاصية {name} بنجاح."
+            },
+            "error": {
+              "title": "خطأ!",
+              "message": "فشل في {action} الخاصية. يرجى المحاولة مرة أخرى!"
+            }
+          }
+        },
+        "create_update": {
+          "title": {
+            "create": "إنشاء خاصية مخصصة جديدة",
+            "update": "تحديث الخاصية المخصصة"
+          },
+          "form": {
+            "display_name": {
+              "placeholder": "العنوان"
+            },
+            "description": {
+              "placeholder": "الوصف"
+            }
+          },
+          "errors": {
+            "name": {
+              "required": "يجب عليك تسمية الخاصية.",
+              "max_length": "يجب ألا يتجاوز اسم الخاصية 255 حرفًا."
+            },
+            "property_type": {
+              "required": "يجب تحديد نوع الخاصية."
+            },
+            "options": {
+              "required": "يجب عليك إضافة خيار واحد على الأقل."
+            },
+            "formula": {
+              "required": "تعبير المعادلة مطلوب.",
+              "invalid": "معادلة غير صالحة: {error}",
+              "circular_reference": "تم اكتشاف مرجع دائري. لا يمكن للمعادلة أن تشير إلى نفسها بشكل مباشر أو غير مباشر.",
+              "invalid_reference": "المعادلة تشير إلى خاصية غير موجودة."
+            }
+          }
+        },
+        "formula": {
+          "field_label": "حقل المعادلة",
+          "tooltip": "أدخل معادلة باستخدام صيغة '{'اسم الحقل'}'. تدعم العمليات +, -, *, /, &.",
+          "placeholder": "اكتب المعادلة",
+          "test_button": "اختبار",
+          "validating": "جاري التحقق",
+          "validation_success": "المعادلة صالحة! تعيد نوع {resultType}",
+          "validation_success_with_refs": "المعادلة صالحة! تعيد نوع {resultType} ({count} حقل مشار إليه)",
+          "error": {
+            "empty": "يرجى إدخال معادلة",
+            "missing_context": "مفقود سياق مساحة العمل أو المشروع أو نوع عنصر العمل",
+            "validation_failed": "فشل التحقق"
+          },
+          "picker": {
+            "no_match": "لا توجد خصائص مطابقة",
+            "no_available": "لا توجد خصائص متاحة"
+          }
+        },
+        "enable_disable": {
+          "label": "نشط",
+          "tooltip": {
+            "disabled": "انقر للتعطيل",
+            "enabled": "انقر للتمكين"
+          }
+        },
+        "delete_confirmation": {
+          "title": "حذف هذه الخاصية",
+          "description": "قد يؤدي حذف الخصائص إلى فقدان البيانات الموجودة.",
+          "secondary_description": "هل تريد تعطيل الخاصية بدلاً من ذلك؟",
+          "primary_button": "{action}، احذفها",
+          "secondary_button": "نعم، قم بتعطيلها"
+        },
+        "max_level_placeholder": "اسحب وأفلت نوع عنصر العمل لإضافة مستوى تسلسل هرمي جديد",
+        "mandate_confirmation": {
+          "label": "خاصية إلزامية",
+          "content": "يبدو أن هناك خيارًا افتراضيًا لهذه الخاصية. جعل الخاصية إلزامية سيزيل القيمة الافتراضية وسيتعين على المستخدمين إضافة قيمة من اختيارهم.",
+          "tooltip": {
+            "disabled": "لا يمكن جعل نوع الخاصية هذا إلزاميًا",
+            "enabled": "إلغاء التحديد لتمييز الحقل كاختياري",
+            "checked": "التحديد لتمييز الحقل كإلزامي"
+          }
+        },
+        "empty_state": {
+          "title": "إضافة خصائص مخصصة",
+          "description": "الخصائص الجديدة التي تضيفها لنوع عنصر العمل هذا ستظهر هنا."
+        }
+      },
+      "types": {
+        "title": "الأنواع",
+        "description": "إنشاء وتخصيص أنواع عناصر العمل بالخصائص.",
+        "sort_options": {
+          "project_count": "عدد المشاريع المشاركة فيها"
+        },
+        "filter_options": {
+          "show_active": "إظهار النشط",
+          "show_inactive": "إظهار غير النشط"
+        },
+        "project": {
+          "add_button": {
+            "create_new": "إنشاء جديد",
+            "import_from_workspace": "استيراد من مساحة العمل"
+          },
+          "banner": {
+            "with_access": "قم بتمكين أنواع عناصر العمل لاستيراد الأنواع من مستوى مساحة العمل",
+            "without_access": "أنواع عناصر العمل معطلة. اتصل بمسؤول مساحة العمل لتمكينها في إعدادات مساحة العمل."
+          }
+        }
+      },
+      "linked_properties": {
+        "title": "الخصائص المخصصة",
+        "add_button": "إضافة خصائص",
+        "modal": {
+          "title": "إضافة خصائص",
+          "empty": {
+            "title": "لا توجد خصائص متاحة",
+            "description": "تم بالفعل ربط جميع الخصائص بهذا النوع."
+          }
+        },
+        "unlink_confirmation": {
+          "title": "إلغاء ربط الخاصية",
+          "description": "سيؤدي إلغاء ربط هذه الخاصية إلى حذف جميع قيمها بشكل دائم عبر كل عنصر عمل يستخدم هذا النوع. لا يمكن التراجع عن هذا الإجراء.",
+          "input_label": "اكتب",
+          "input_label_suffix": "للمتابعة:",
+          "confirm": "إلغاء ربط الخاصية",
+          "loading": "جاري إلغاء الربط"
+        }
+      },
+      "item_delete_confirmation": {
+        "title": "حذف هذا النوع",
+        "description": "قد يؤدي حذف الأنواع إلى فقدان البيانات الموجودة.",
+        "can_disable_warning": "هل تريد تعطيل النوع بدلاً من ذلك؟",
+        "primary_button": "نعم، احذفه",
+        "toast": {
+          "success": {
+            "title": "نجاح!",
+            "message": "تم حذف نوع عنصر العمل بنجاح."
+          },
+          "error": {
+            "title": "خطأ!",
+            "message": "فشل حذف نوع عنصر العمل. يرجى المحاولة مرة أخرى!"
+          }
+        },
+        "errors": {
+          "cannot_delete_default_work_item_type": "لا يمكن حذف نوع عنصر العمل الافتراضي",
+          "cannot_delete_work_item_type_with_associated_work_items": "لا يمكن حذف نوع عنصر العمل المرتبط بعناصر عمل موجودة"
+        }
+      }
+    },
+    "create": {
+      "title": "إنشاء نوع عنصر عمل",
+      "button": "إضافة نوع عنصر عمل",
+      "toast": {
+        "success": {
+          "title": "نجاح!",
+          "message": "تم إنشاء نوع عنصر العمل بنجاح."
+        },
+        "error": {
+          "title": "خطأ!",
+          "message": {
+            "default": "فشل إنشاء نوع عنصر العمل. يرجى المحاولة مرة أخرى!",
+            "conflict": "النوع {name} موجود بالفعل. اختر اسمًا مختلفًا."
+          }
+        }
+      }
+    },
+    "update": {
+      "title": "تحديث نوع عنصر عمل",
+      "button": "تحديث نوع عنصر عمل",
+      "toast": {
+        "success": {
+          "title": "نجاح!",
+          "message": "تم تحديث نوع عنصر العمل {name} بنجاح."
+        },
+        "error": {
+          "title": "خطأ!",
+          "message": {
+            "default": "فشل تحديث نوع عنصر العمل. يرجى المحاولة مرة أخرى!",
+            "conflict": "النوع {name} موجود بالفعل. اختر اسمًا مختلفًا."
+          }
+        }
+      }
+    },
+    "create_update": {
+      "form": {
+        "name": {
+          "placeholder": "أعطِ نوع عنصر العمل هذا اسمًا فريدًا"
+        },
+        "description": {
+          "placeholder": "صف الغرض من نوع عنصر العمل هذا ومتى ينبغي استخدامه."
+        }
+      }
+    },
+    "enable_disable": {
+      "toast": {
+        "loading": "جاري {action} نوع عنصر العمل {name}",
+        "success": {
+          "title": "نجاح!",
+          "message": "تم {action} نوع عنصر العمل {name} بنجاح."
+        },
+        "error": {
+          "title": "خطأ!",
+          "message": "فشل في {action} نوع عنصر العمل. يرجى المحاولة مرة أخرى!"
+        }
+      },
+      "tooltip": "انقر لـ {action}"
+    },
+    "change_confirmation": {
+      "title": "تغيير نوع عنصر العمل؟",
+      "description": "قد يؤدي تغيير نوع عنصر العمل إلى فقدان قيم الخصائص المخصصة المحددة للنوع الحالي. لا يمكن التراجع عن هذا الإجراء.",
+      "button": {
+        "loading": "جاري التغيير",
+        "default": "تغيير النوع"
+      }
+    },
+    "empty_state": {
+      "enable": {
+        "title": "تمكين أنواع عناصر العمل",
+        "description": "نسّق عناصر العمل لتناسب طبيعة عملك باستخدام أنواع عناصر العمل. خصصها بالأيقونات والخلفيات والخصائص وقم بتهيئتها لهذا المشروع.",
+        "primary_button": {
+          "text": "تمكين"
+        },
+        "confirmation": {
+          "title": "بمجرد التمكين، لا يمكن تعطيل أنواع عناصر العمل.",
+          "description": "سيكون عنصر عمل Plane هو النوع الافتراضي لهذا المشروع وسيظهر بأيقونته وخلفيته في هذا المشروع.",
+          "button": {
+            "default": "تمكين",
+            "loading": "جاري الإعداد"
+          }
+        }
+      },
+      "get_pro": {
+        "title": "احصل على Pro لتمكين أنواع عناصر العمل.",
+        "description": "نسّق عناصر العمل لتناسب طبيعة عملك باستخدام أنواع عناصر العمل. خصصها بالأيقونات والخلفيات والخصائص وقم بتهيئتها لهذا المشروع.",
+        "primary_button": {
+          "text": "احصل على Pro"
+        }
+      },
+      "upgrade": {
+        "title": "قم بالترقية لتمكين أنواع عناصر العمل.",
+        "description": "نسّق عناصر العمل لتناسب طبيعة عملك باستخدام أنواع عناصر العمل. خصصها بالأيقونات والخلفيات والخصائص وقم بتهيئتها لهذا المشروع.",
+        "primary_button": {
+          "text": "ترقية"
+        }
+      }
+    }
+  },
+  "work_item_type_hierarchy": {
+    "settings": {
+      "title": "التسلسل الهرمي",
+      "tab_label": "التسلسل الهرمي",
+      "description": "قم بإعداد مستويات التسلسل الهرمي لتنظيم عملك. يحدد كل مستوى علاقة أب مع العنصر الذي يعلوه مباشرة وعلاقة ابن مع العنصر الذي يليه مباشرة.",
+      "sidebar_label": "التسلسل الهرمي",
+      "enable_control": {
+        "title": "تمكين التسلسل الهرمي",
+        "description": "إنشاء علاقات أب وابن بين أنواع عناصر العمل المختلفة.",
+        "tooltip": "لا يمكنك تعطيل التسلسل الهرمي بمجرد تمكينه."
+      },
+      "workspace_work_item_types_disabled_banner": {
+        "content": "قم بتعريف أنواع عناصر العمل أولاً لإنشاء تسلسل هرمي جديد.",
+        "cta": "إعدادات أنواع عناصر العمل"
+      }
+    },
+    "levels": {
+      "max_level_placeholder": "اسحب وأفلت النوع لإضافة مستوى تسلسل هرمي جديد",
+      "empty_level_placeholder": "اسحب وأفلت نوع عنصر العمل إلى المستوى {level}",
+      "drag_tooltip": "اسحب لتغيير المستوى",
+      "quick_actions": {
+        "set_as_default": {
+          "label": "تعيين كافتراضي",
+          "toast": {
+            "loading": "جاري التعيين كافتراضي...",
+            "success": {
+              "title": "نجاح!",
+              "message": "تم تعيين مستوى التسلسل الهرمي {level} كافتراضي بنجاح."
+            },
+            "error": {
+              "title": "خطأ!",
+              "message": "فشل تعيين مستوى التسلسل الهرمي {level} كافتراضي. يرجى المحاولة مرة أخرى."
+            }
+          }
+        }
+      },
+      "update_level_toast": {
+        "loading": "جاري نقل {workItemTypeName} إلى المستوى {level}...",
+        "success": {
+          "title": "نجاح!",
+          "message": "تم نقل {workItemTypeName} إلى المستوى {level} بنجاح."
+        }
+      }
+    },
+    "break_hierarchy_modal": {
+      "title": "خطأ في التحقق!",
+      "content": {
+        "intro": "نوع عنصر العمل {workItemTypeName} يحتوي على:",
+        "parent_items": "{count, plural, one {عنصر عمل أب واحد} other {# عناصر عمل أب}}",
+        "child_items": "{count, plural, one {عنصر عمل فرعي واحد} other {# عناصر عمل فرعية}}",
+        "parent_line_suffix_when_also_children": "، و ",
+        "footer": "سيؤدي هذا التغيير إلى إزالة علاقات الأب والابن من عناصر العمل الحالية لنوع عنصر العمل {workItemTypeName}."
+      },
+      "confirm_input": {
+        "label": "اكتب \"Confirm\" للمتابعة.",
+        "placeholder": "Confirm"
+      },
+      "error_toast": {
+        "title": "خطأ!",
+        "message": "فشل كسر التسلسل الهرمي. يرجى المحاولة مرة أخرى."
+      },
+      "confirm_button": {
+        "loading": "جاري التطبيق",
+        "default": "تطبيق وإلغاء الربط"
+      }
+    },
+    "work_item_modal": {
+      "invalid_work_item_type_create_toast": {
+        "title": "خطأ!",
+        "message": "لا يمكن استخدام نوع عنصر العمل المحدد لإنشاء عنصر عمل جديد لأنه يكسر قواعد التسلسل الهرمي."
+      },
+      "invalid_work_item_type_update_toast": {
+        "title": "خطأ!",
+        "message": "لا يمكن تحديث نوع عنصر العمل لأنه يكسر قواعد التسلسل الهرمي."
+      }
+    },
+    "work_item_type_modal": {
+      "level": "مستوى التسلسل الهرمي",
+      "invalid_level_toast": {
+        "title": "خطأ!",
+        "message": "لا يمكن تحديث نوع عنصر العمل لأنه يكسر قواعد التسلسل الهرمي."
+      }
+    }
+  }
+}

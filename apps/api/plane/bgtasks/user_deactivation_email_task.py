@@ -22,14 +22,24 @@ from plane.utils.exception_logger import log_exception
 @shared_task
 def user_deactivation_email(current_site, user_id):
     try:
-        # Send email to user when account is deactivated
         user = User.objects.get(id=user_id)
-        subject = f"{user.first_name or user.display_name or user.email} has been deactivated on Plane"
+        from plane.db.models import Profile
+        language = "en"
+        profile = Profile.objects.filter(user=user).first()
+        if profile:
+            language = profile.language
+
+        if language == "ar":
+            subject = "تم إيقاف تفعيل حسابك على Plane"
+            template_name = "emails/user/user_deactivation_ar.html"
+        else:
+            subject = f"{user.first_name or user.display_name or user.email} has been deactivated on Plane"
+            template_name = "emails/user/user_deactivation.html"
 
         context = {"email": str(user.email), "login_url": current_site + "/login"}
 
         # Send email to user
-        html_content = render_to_string("emails/user/user_deactivation.html", context)
+        html_content = render_to_string(template_name, context)
 
         text_content = generate_plain_text_from_html(html_content)
         # Configure email connection from the database

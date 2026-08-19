@@ -1,0 +1,115 @@
+{
+  "page_navigation_pane": {
+    "tabs": {
+      "outline": {
+        "label": "المخطط التفصيلي",
+        "empty_state": {
+          "title": "عناوين مفقودة",
+          "description": "دعنا نضع بعض العناوين في هذه الصفحة لرؤيتها هنا."
+        }
+      },
+      "info": {
+        "label": "معلومات",
+        "document_info": {
+          "words": "الكلمات",
+          "characters": "الحروف",
+          "paragraphs": "الفقرات",
+          "read_time": "وقت القراءة"
+        },
+        "actors_info": {
+          "edited_by": "تعديل بواسطة",
+          "created_by": "أنشئ بواسطة"
+        },
+        "version_history": {
+          "label": "سجل الإصدارات",
+          "current_version": "الإصدار الحالي",
+          "highlight_changes": "تمييز التغييرات"
+        }
+      },
+      "assets": {
+        "label": "الأصول",
+        "download_button": "تنزيل",
+        "empty_state": {
+          "title": "صور مفقودة",
+          "description": "أضف صورًا لرؤيتها هنا."
+        }
+      },
+      "comments": {
+        "label": "التعليقات",
+        "empty_state": {
+          "title": "لا توجد تعليقات",
+          "description": "أضف تعليقات لرؤيتها هنا."
+        }
+      }
+    },
+    "toasts": {
+      "errors": {
+        "wrong_name": "لا يمكن أن يكون اسم الملاحظة اللاصقة أطول من 100 حرف.",
+        "already_exists": "توجد بالفعل ملاحظة لاصقة بدون وصف"
+      },
+      "created": {
+        "title": "تم إنشاء الملاحظة اللاصقة",
+        "message": "تم إنشاء الملاحظة اللاصقة بنجاح"
+      },
+      "not_created": {
+        "title": "لم يتم إنشاء الملاحظة اللاصقة",
+        "message": "تعذر إنشاء الملاحظة اللاصقة"
+      },
+      "updated": {
+        "title": "تم تحديث الملاحظة اللاصقة",
+        "message": "تم تحديث الملاحظة اللاصقة بنجاح"
+      },
+      "not_updated": {
+        "title": "لم يتم تحديث الملاحظة اللاصقة",
+        "message": "تعذر تحديث الملاحظة اللاصقة"
+      },
+      "removed": {
+        "title": "تم إزالة الملاحظة اللاصقة",
+        "message": "تم إزالة الملاحظة اللاصقة بنجاح"
+      },
+      "not_removed": {
+        "title": "لم يتم إزالة الملاحظة اللاصقة",
+        "message": "تعذر إزالة الملاحظة اللاصقة"
+      }
+    },
+    "open_button": "فتح لوحة التنقل",
+    "close_button": "إغلاق لوحة التنقل",
+    "outline_floating_button": "فتح المخطط التفصيلي"
+  },
+  "page_actions": {
+    "move_page": {
+      "submit_button": {
+        "default": "نقل",
+        "loading": "جاري النقل"
+      },
+      "cannot_move_to_teamspace": "لا يمكن نقل الصفحات الخاصة والمشتركة إلى مساحة فريق.",
+      "placeholders": {
+        "workspace_to_all": "البحث عن المشاريع ومساحات الفريق",
+        "workspace_to_project": "البحث عن المشاريع",
+        "project_to_all": "البحث عن المشاريع ومساحات الفريق",
+        "project_to_project": "البحث عن المشاريع",
+        "project_to_all_with_wiki": "البحث عن مجموعات الويكي والمشاريع ومساحات الفريق",
+        "project_to_project_with_wiki": "البحث عن مجموعات الويكي والمشاريع"
+      },
+      "toasts": {
+        "success": {
+          "title": "نجاح!",
+          "message": "تم نقل الصفحة بنجاح."
+        },
+        "error": {
+          "title": "خطأ!",
+          "message": "تعذر نقل الصفحة. يرجى المحاولة مرة أخرى لاحقًا."
+        },
+        "collection_error": {
+          "title": "تم النقل إلى الويكي",
+          "message": "تم نقل الصفحة إلى الويكي، ولكن تعذر إضافتها إلى المجموعة المحددة. تظل في العام."
+        }
+      }
+    },
+    "remove_from_collection": {
+      "label": "إزالة من المجموعة",
+      "success_message": "تم إزالة الصفحة من المجموعة.",
+      "error_message": "تعذر إزالة الصفحة من المجموعة. يرجى المحاولة مرة أخرى."
+    }
+  }
+}

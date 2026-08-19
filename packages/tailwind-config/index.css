@@ -201,3 +201,16 @@ body {
     @apply text-placeholder;
   }
 }
+
+@font-face {
+  font-family: "SST Arabic";
+  src: url("/fonts/arfonts-sst-arabic-medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+html[lang="ar"] {
+  --font-heading: "SST Arabic", ui-sans-serif, system-ui, sans-serif !important;
+  --font-body: "SST Arabic", ui-sans-serif, system-ui, sans-serif !important;
+}

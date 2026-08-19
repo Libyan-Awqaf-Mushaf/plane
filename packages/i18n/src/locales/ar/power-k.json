@@ -1,0 +1,192 @@
+{
+  "power_k": {
+    "actions_commands": {
+      "bulk_delete_work_items": "حذف جماعي لعناصر العمل"
+    },
+    "contextual_actions": {
+      "work_item": {
+        "title": "إجراءات عناصر العمل",
+        "indicator": "عنصر عمل",
+        "change_state": "تغيير الحالة",
+        "change_priority": "تغيير الأولوية",
+        "change_assignees": "تعيين إلى",
+        "assign_to_me": "تعيين لي",
+        "unassign_from_me": "إلغاء تعييني",
+        "change_estimate": "تغيير التقدير",
+        "add_to_cycle": "إضافة إلى دورة",
+        "add_to_modules": "إضافة إلى وحدات برمجية",
+        "add_labels": "إضافة تسميات",
+        "subscribe": "الاشتراك في الإشعارات",
+        "unsubscribe": "إلغاء الاشتراك من الإشعارات",
+        "delete": "حذف",
+        "copy_id": "نسخ المعرف",
+        "copy_id_toast_success": "تم نسخ معرف عنصر العمل إلى الحافظة.",
+        "copy_id_toast_error": "حدث خطأ ما أثناء نسخ معرف عنصر العمل إلى الحافظة.",
+        "copy_title": "نسخ العنوان",
+        "copy_title_toast_success": "تم نسخ عنوان عنصر العمل إلى الحافظة.",
+        "copy_title_toast_error": "حدث خطأ ما أثناء نسخ عنوان عنصر العمل إلى الحافظة.",
+        "copy_url": "نسخ الرابط",
+        "copy_url_toast_success": "تم نسخ رابط عنصر العمل إلى الحافظة.",
+        "copy_url_toast_error": "حدث خطأ ما أثناء نسخ رابط عنصر العمل إلى الحافظة."
+      },
+      "cycle": {
+        "title": "إجراءات الدورة",
+        "indicator": "دورة",
+        "add_to_favorites": "إضافة إلى المفضلة",
+        "remove_from_favorites": "إزالة من المفضلة",
+        "copy_url": "نسخ الرابط",
+        "copy_url_toast_success": "تم نسخ رابط الدورة إلى الحافظة.",
+        "copy_url_toast_error": "حدث خطأ ما أثناء نسخ رابط الدورة إلى الحافظة."
+      },
+      "module": {
+        "title": "إجراءات الوحدة البرمجية",
+        "indicator": "وحدة برمجية",
+        "add_remove_members": "إضافة/إزالة أعضاء",
+        "change_status": "تغيير الحالة",
+        "add_to_favorites": "إضافة إلى المفضلة",
+        "remove_from_favorites": "إزالة من المفضلة",
+        "copy_url": "نسخ الرابط",
+        "copy_url_toast_success": "تم نسخ رابط الوحدة البرمجية إلى الحافظة.",
+        "copy_url_toast_error": "حدث خطأ ما أثناء نسخ رابط الوحدة البرمجية إلى الحافظة."
+      },
+      "page": {
+        "title": "إجراءات الصفحة",
+        "indicator": "صفحة",
+        "lock": "قفل",
+        "unlock": "إلغاء القفل",
+        "make_private": "جعلها خاصة",
+        "make_public": "جعلها عامة",
+        "archive": "أرشفة",
+        "restore": "استعادة",
+        "add_to_favorites": "إضافة إلى المفضلة",
+        "remove_from_favorites": "إزالة من المفضلة",
+        "copy_url": "نسخ الرابط",
+        "copy_url_toast_success": "تم نسخ رابط الصفحة إلى الحافظة.",
+        "copy_url_toast_error": "حدث خطأ ما أثناء نسخ رابط الصفحة إلى الحافظة."
+      }
+    },
+    "creation_actions": {
+      "create_work_item": "عنصر عمل جديد",
+      "create_page": "صفحة جديدة",
+      "create_view": "عرض جديد",
+      "create_cycle": "دورة جديدة",
+      "create_module": "وحدة برمجية جديدة",
+      "create_project": "مشروع جديد",
+      "create_workspace": "مساحة عمل جديدة",
+      "create_project_automation": "أتمتة جديدة"
+    },
+    "navigation_actions": {
+      "open_workspace": "فتح مساحة عمل",
+      "nav_home": "الذهاب للرئيسية",
+      "nav_inbox": "الذهاب للوارد",
+      "nav_your_work": "الذهاب لعملك",
+      "nav_account_settings": "الذهاب لإعدادات الحساب",
+      "open_project": "فتح مشروع",
+      "nav_projects_list": "الذهاب لقائمة المشاريع",
+      "nav_all_workspace_work_items": "الذهاب لجميع عناصر العمل",
+      "nav_assigned_workspace_work_items": "الذهاب لعناصر العمل المعينة",
+      "nav_created_workspace_work_items": "الذهاب لعناصر العمل المنشأة",
+      "nav_subscribed_workspace_work_items": "الذهاب لعناصر العمل المشترك بها",
+      "nav_workspace_analytics": "الذهاب لتحليلات مساحة العمل",
+      "nav_workspace_drafts": "الذهاب للمسودات",
+      "nav_workspace_archives": "الذهاب للأرشيف",
+      "open_workspace_setting": "فتح إعدادات مساحة العمل",
+      "nav_workspace_settings": "الذهاب لإعدادات مساحة العمل",
+      "nav_project_work_items": "الذهاب لعناصر العمل",
+      "open_project_cycle": "فتح دورة",
+      "nav_project_cycles": "الذهاب للدورات",
+      "open_project_module": "فتح وحدة برمجية",
+      "nav_project_modules": "الذهاب للوحدات البرمجية",
+      "open_project_view": "فتح عرض للمشروع",
+      "nav_project_views": "الذهاب لعروض المشروع",
+      "nav_project_pages": "الذهاب للصفحات",
+      "nav_project_intake": "الذهاب للوارد",
+      "nav_project_archives": "الذهاب لأرشيف المشروع",
+      "open_project_setting": "فتح إعداد للمشروع",
+      "nav_project_settings": "الذهاب لإعدادات المشروع",
+      "nav_workspace_active_cycle": "الذهاب لجميع الدورات النشطة",
+      "nav_project_overview": "الذهاب لنظرة عامة على المشروع"
+    },
+    "account_actions": {
+      "sign_out": "تسجيل الخروج",
+      "workspace_invites": "دعوات مساحة العمل"
+    },
+    "miscellaneous_actions": {
+      "toggle_app_sidebar": "تبديل شريط التطبيق الجانبي",
+      "copy_current_page_url": "نسخ رابط الصفحة الحالية",
+      "copy_current_page_url_toast_success": "تم نسخ رابط الصفحة الحالية إلى الحافظة.",
+      "copy_current_page_url_toast_error": "حدث خطأ ما أثناء نسخ رابط الصفحة الحالية إلى الحافظة.",
+      "focus_top_nav_search": "التركيز على حقل البحث"
+    },
+    "preferences_actions": {
+      "update_theme": "تغيير مظهر الواجهة",
+      "update_timezone": "تغيير المنطقة الزمنية",
+      "update_start_of_week": "تغيير اليوم الأول للأسبوع",
+      "update_language": "تغيير لغة الواجهة",
+      "toast": {
+        "theme": {
+          "success": "تم تحديث المظهر بنجاح.",
+          "error": "فشل تحديث المظهر. يرجى المحاولة مرة أخرى."
+        },
+        "timezone": {
+          "success": "تم تحديث المنطقة الزمنية بنجاح.",
+          "error": "فشل تحديث المنطقة الزمنية. يرجى المحاولة مرة أخرى."
+        },
+        "generic": {
+          "success": "تم تحديث التفضيلات بنجاح.",
+          "error": "فشل تحديث التفضيلات. يرجى المحاولة مرة أخرى."
+        }
+      }
+    },
+    "help_actions": {
+      "open_keyboard_shortcuts": "فتح اختصارات لوحة المفاتيح",
+      "open_plane_documentation": "فتح وثائق Plane",
+      "join_forum": "الانضمام إلى المنتدى الخاص بنا",
+      "report_bug": "الإبلاغ عن مشكلة",
+      "chat_with_us": "تحدث معنا"
+    },
+    "page_placeholders": {
+      "default": "اكتب أمرًا أو ابحث",
+      "open_workspace": "فتح مساحة عمل",
+      "open_project": "فتح مشروع",
+      "open_workspace_setting": "فتح إعداد لمساحة العمل",
+      "open_project_cycle": "فتح دورة",
+      "open_project_module": "فتح وحدة برمجية",
+      "open_project_view": "فتح عرض للمشروع",
+      "open_project_setting": "فتح إعداد للمشروع",
+      "update_work_item_state": "تغيير الحالة",
+      "update_work_item_priority": "تغيير الأولوية",
+      "update_work_item_assignee": "تعيين إلى",
+      "update_work_item_estimate": "تغيير التقدير",
+      "update_work_item_cycle": "إضافة إلى دورة",
+      "update_work_item_module": "إضافة إلى وحدات برمجية",
+      "update_work_item_labels": "إضافة تسميات",
+      "update_module_member": "تغيير الأعضاء",
+      "update_module_status": "تغيير الحالة",
+      "update_theme": "تغيير المظهر",
+      "update_timezone": "تغيير المنطقة الزمنية",
+      "update_start_of_week": "تغيير اليوم الأول للأسبوع",
+      "update_language": "تغيير اللغة"
+    },
+    "search_menu": {
+      "no_results": "لم يتم العثور على نتائج",
+      "clear_search": "مسح البحث",
+      "go_to_advanced_search": "الانتقال إلى البحث المتقدم"
+    },
+    "footer": {
+      "workspace_level": "مستوى مساحة العمل"
+    },
+    "group_titles": {
+      "actions": "الإجراءات",
+      "contextual": "السياقية",
+      "navigation": "التنقل",
+      "create": "إنشاء",
+      "general": "عام",
+      "settings": "الإعدادات",
+      "account": "الحساب",
+      "miscellaneous": "متنوع",
+      "preferences": "التفضيلات",
+      "help": "المساعدة"
+    }
+  }
+}
