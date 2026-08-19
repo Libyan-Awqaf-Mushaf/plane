@@ -45,6 +45,8 @@ services:
     command: ./bin/docker-entrypoint-api.sh
     env_file:
       - .env
+    environment:
+      GUNICORN_WORKERS: ${GUNICORN_WORKERS:-2}
     depends_on:
       - plane-db
       - plane-redis
